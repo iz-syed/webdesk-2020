@@ -14,7 +14,53 @@
   --secondary-rgb:0, 0, 0; }
 
 /* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: var(--color-black); }
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
 /* Typography */
+/* Float */
+.float-left {
+  float: left !important; }
+
+.float-right {
+  float: right !important; }
+
+.float-none {
+  float: none !important; }
+
 /* Avatar */
 .avatar {
   width: 100px;
@@ -46,6 +92,7 @@
       .box:before {
         content: "large-desktop - 1200 min"; } }
 
+/* clearfix */
 /* Booleans */
 /*!
  * Font Awesome Pro 5.12.1 by @fontawesome - https://fontawesome.com
