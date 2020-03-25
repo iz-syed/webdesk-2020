@@ -1,0 +1,12 @@
+/* Avatar */ 
+@mixin avatar($size, $circle: false ) {
+    width: $size;
+    height: $size;
+  
+    @if $circle {
+      border-radius: $size / 2;
+    }
+ }
+
+ .avatar { @include avatar(100px, $circle: false); }
+ .avatar-rounded { @include avatar(100px, $circle: true); }

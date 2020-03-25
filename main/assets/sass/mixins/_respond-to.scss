@@ -1,0 +1,72 @@
+/* Respond to */ 
+@mixin respond-to($media) {
+  // Phone
+  @if $media == phone {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  // Tablet Portrait
+  @else if $media == tablet-portrait {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  // Tablet Landscape - Desktop
+  @else if $media == tablet-landscape-desktop {
+    @media (min-width: 768px) and (max-width: 979px) {
+      @content;
+    }
+  }
+  // Large Desktop
+  @else if $media == large-desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  // Non-Retina
+  @else if $media == non-retina {
+    @media screen and (-webkit-max-device-pixel-ratio: 1) {
+      @content;
+    }
+  }
+  // Retina Only
+  @else if $media == retina {
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  }
+  // Custom breakpoint
+  @else {
+    @media ($media) {
+      @content;
+    }
+  } 
+}
+
+
+.box {
+  border:1px solid red;
+  box-shadow:$box-shadow-sm;
+
+  &:before {
+    content:"desktop";
+    display: block;
+    color:red;
+      @include respond-to(phone) { 
+        content:"phone - 480 max";
+      }
+
+      @include respond-to(tablet-portrait) { 
+        content:"tablet-portrait - 767 max";
+      }
+
+      @include respond-to(tablet-landscape-desktop) { 
+        content:"tablet-landscape-desktop - 768 min - 979 max";
+      }
+
+      @include respond-to(large-desktop) { 
+        content:"large-desktop - 1200 min";
+      }
+  }
+}
