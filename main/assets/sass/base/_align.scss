@@ -1,0 +1,12 @@
+/* align */ 
+
+// stylelint-disable declaration-no-important
+
+$aligns : baseline, top, middle, bottom, text-bottom, text-top;
+
+@each $align in $aligns {
+  .align-#{$align} {
+      vertical-align: #{$align} !important;
+  }
+}
+
