@@ -1,5 +1,9 @@
 /* Float */ 
 
-.float-left  { float: left !important; }
-.float-right { float: right !important; }
-.float-none  { float: none !important; }
+$floatings : left, right, none;
+
+@each $float in $floatings {
+  .float-#{$float} {
+      float : #{$float} !important;
+  }
+}

@@ -1,4 +1,4 @@
-/* Typography */
+/* variable */
 :root {
   --primary:#000;
   --primary-rgb:0, 0, 0;
@@ -13,6 +13,7 @@
   --secondary:#000;
   --secondary-rgb:0, 0, 0; }
 
+/* media query logics */
 /* Reset */
 *,
 *::before,
@@ -60,6 +61,25 @@ hr {
 
 .float-none {
   float: none !important; }
+
+/* directions */
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+.text-start {
+  text-align: start !important; }
+
+.text-end {
+  text-align: end !important; }
 
 /* Avatar */
 .avatar {
@@ -12667,3 +12687,31 @@ readers do not read off random characters that represent icons */
     .table td,
     .table th {
       background-color: var(--white) !important; } }
+
+/* breakpoints */
+/*grid*/
+/*Ex:*/
+.col-1 {
+  max-width: 8.33333%; }
+
+@media (min-width: 576px) {
+  /*Ex:*/
+  .col-sm-1 {
+    max-width: 8.33333%; } }
+
+@media (min-width: 768px) {
+  /*Ex:*/
+  .col-md-1 {
+    max-width: 8.33333%; } }
+
+@media (min-width: 992px) {
+  /*Ex:*/
+  .col-lg-1 {
+    max-width: 8.33333%; } }
+
+@media (min-width: 1200px) {
+  /*Ex:*/
+  .col-xl-1 {
+    max-width: 8.33333%; } }
+
+/* padding */

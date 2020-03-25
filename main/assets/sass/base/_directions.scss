@@ -1,0 +1,12 @@
+/* directions */ 
+
+$directions : left, right, center, justify, start, end;
+
+// left and start same value
+// right and end same vale
+
+@each $direction in $directions {
+  .text-#{$direction} {
+      text-align : #{$direction} !important;
+  }
+}

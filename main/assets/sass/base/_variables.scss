@@ -1,4 +1,4 @@
-/* Typography */ 
+/* variable */ 
 
 $primary: #000;
 $primary-rgb:0, 0, 0;
@@ -198,3 +198,13 @@ $sizes: map-merge(
   ),
   $sizes
 );
+
+// ------------------
+
+/* media query logics */
+
+
+
+
+$offset-value:8.3333333333%;
+
