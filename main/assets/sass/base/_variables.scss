@@ -18,6 +18,8 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+$red: #fe4f4a;
+
 
 
 // light theme
@@ -29,9 +31,8 @@ $black:    #000 !default;
     --secondary-rgb:#{$secondary-rgb};
 
     --black:#{$black};
-    
-
     --white:#{$white};
+    --danger:#{$red};
 }
 
 // dark theme
@@ -215,3 +216,8 @@ $col:8.3333333333%;
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
+
+
+.test {
+  border:1px solid var(--danger);
+}
