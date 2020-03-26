@@ -208,3 +208,10 @@ $sizes: map-merge(
 
 $col:8.3333333333%;
 
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
