@@ -100,6 +100,34 @@ hr {
 .align-text-top {
   vertical-align: text-top !important; }
 
+/* Display */
+.d-none {
+  display: none !important; }
+
+.d-inline {
+  display: inline !important; }
+
+.d-inline-block {
+  display: inline-block !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-table {
+  display: table !important; }
+
+.d-table-row {
+  display: table-row !important; }
+
+.d-table-cell {
+  display: table-cell !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.d-inline-flex {
+  display: inline-flex !important; }
+
 /* Avatar */
 .avatar {
   width: 100px;
@@ -12709,7 +12737,6 @@ readers do not read off random characters that represent icons */
 
 /* breakpoints */
 /*grid*/
-/*Ex:*/
 .col-1 {
   max-width: 8.33333%; }
 
@@ -12747,7 +12774,6 @@ readers do not read off random characters that represent icons */
   max-width: 100.0%; }
 
 @media (min-width: 576px) {
-  /*Ex:*/
   .col-sm-1 {
     max-width: 8.33333%; }
   .col-sm-2 {
@@ -12774,7 +12800,6 @@ readers do not read off random characters that represent icons */
     max-width: 100.0%; } }
 
 @media (min-width: 768px) {
-  /*Ex:*/
   .col-md-1 {
     max-width: 8.33333%; }
   .col-md-2 {
@@ -12801,7 +12826,6 @@ readers do not read off random characters that represent icons */
     max-width: 100.0%; } }
 
 @media (min-width: 992px) {
-  /*Ex:*/
   .col-lg-1 {
     max-width: 8.33333%; }
   .col-lg-2 {
@@ -12828,7 +12852,6 @@ readers do not read off random characters that represent icons */
     max-width: 100.0%; } }
 
 @media (min-width: 1200px) {
-  /*Ex:*/
   .col-xl-1 {
     max-width: 8.33333%; }
   .col-xl-2 {
@@ -12854,4 +12877,27 @@ readers do not read off random characters that represent icons */
   .col-xl-12 {
     max-width: 100.0%; } }
 
+/*flex*/
 /* padding */
+/* container */
+.container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+/* Header */
+/* Footer */
