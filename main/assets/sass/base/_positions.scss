@@ -1,0 +1,9 @@
+/* Positions */ 
+
+$positions : absolute, fixed, inherit, initial, relative, static, sticky, unset ;
+
+@each $value in $positions {
+  .position-#{$value} {
+      position : #{$value} !important;
+  }
+}

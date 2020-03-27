@@ -99,6 +99,31 @@ hr {
 .float-none {
   float: none !important; }
 
+/* Positions */
+.position-absolute {
+  position: absolute !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
+.position-inherit {
+  position: inherit !important; }
+
+.position-initial {
+  position: initial !important; }
+
+.position-relative {
+  position: relative !important; }
+
+.position-static {
+  position: static !important; }
+
+.position-sticky {
+  position: sticky !important; }
+
+.position-unset {
+  position: unset !important; }
+
 /* directions */
 .text-left {
   text-align: left !important; }
@@ -14857,16 +14882,18 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal; }
 
-.bo-dy {
+.body {
   font-family: "robotoRegular", sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.4; }
 
-.h-1 {
+h1, .h1,
+h2, .h2,
+h3, .h3 {
   font-family: "robotoBold", sans-serif;
   letter-spacing: 0.4; }
 
-.h-2 {
+h4, .h4 {
   font-family: "robotoLight", sans-serif;
   letter-spacing: 0.4; }
 
@@ -14908,3 +14935,5 @@ header {
   background-color: var(--color-white); }
 
 /* Footer */
+.pointer {
+  cursor: pointer; }

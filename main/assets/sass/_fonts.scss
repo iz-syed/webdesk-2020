@@ -60,15 +60,17 @@ $title-text-letter-spacing: .4;
 }
 
 
-.bo-dy {
+.body {
   @include text-style('body');
 }
 
-.h-1 {
+h1, .h1,
+h2, .h2,
+h3, .h3,  {
   @include text-style('title')
 }
 
-.h-2 {
+h4, .h4 {
   @include text-style('title-alt')
 }
 
