@@ -14838,6 +14838,38 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Duotone';
   font-weight: 900; }
 
+/* font custom 0001 */
+@font-face {
+  font-family: 'robotoRegular';
+  src: url("../fonts/robotocondensed/regular/robotocondensed-webfont.woff2") format("woff2"), url("../fonts/robotocondensed/regular/robotocondensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoBold';
+  src: url("../fonts/robotocondensed/bold/robotocondensed-webfont.woff2") format("woff2"), url("../fonts/robotocondensed/bold/robotocondensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoLight';
+  src: url("../fonts/robotocondensed/light/robotocondensed-webfont.woff2") format("woff2"), url("../fonts/robotocondensed/light/robotocondensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.bo-dy {
+  font-family: "robotoRegular", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.4; }
+
+.h-1 {
+  font-family: "robotoBold", sans-serif;
+  letter-spacing: 0.4; }
+
+.h-2 {
+  font-family: "robotoLight", sans-serif;
+  letter-spacing: 0.4; }
+
 /* body */
 body {
   background-color: var(--color-body);
@@ -14870,4 +14902,9 @@ body {
   padding: 8px 0 7px 0; }
 
 /* Header */
+header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: var(--color-white); }
+
 /* Footer */

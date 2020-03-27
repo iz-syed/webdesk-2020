@@ -1,2 +1,75 @@
+/* font custom 0001 */ 
+
+$font-path-roboto:         "../fonts/robotocondensed" !default;
+
+
+@font-face {
+    font-family: 'robotoRegular';
+    src: url('#{$font-path-roboto}/regular/robotocondensed-webfont.woff2') format('woff2'),
+         url('#{$font-path-roboto}/regular/robotocondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoBold';
+    src: url('#{$font-path-roboto}/bold/robotocondensed-webfont.woff2') format('woff2'),
+         url('#{$font-path-roboto}/bold/robotocondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoLight';
+    src: url('#{$font-path-roboto}/light/robotocondensed-webfont.woff2') format('woff2'),
+         url('#{$font-path-roboto}/light/robotocondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+  
+$body-text: 'robotoRegular', sans-serif;
+$body-text-letter-spacing: 0.02em;
+$body-text-line-height: 1.4;
+
+$title-text: 'robotoBold', sans-serif;
+$title-text-letter-spacing: .4;
+
+$title-text-alt: 'robotoLight', sans-serif;
+$title-text-letter-spacing: .4;
+
+// Type face
+@mixin text-style($type) {
+    @if $type == 'title' {
+      font-family: $title-text;
+      letter-spacing: $title-text-letter-spacing;
+    }
+
+    @else if $type == 'title-alt' {
+        font-family: $title-text-alt;
+        letter-spacing: $title-text-letter-spacing;
+  }
+    
+  @else if $type == 'body' {
+    font-family: $body-text;
+    letter-spacing: $body-text-letter-spacing;
+    line-height: $body-text-line-height;
+  }
+}
+
+
+.bo-dy {
+  @include text-style('body');
+}
+
+.h-1 {
+  @include text-style('title')
+}
+
+.h-2 {
+  @include text-style('title-alt')
+}
 
 
