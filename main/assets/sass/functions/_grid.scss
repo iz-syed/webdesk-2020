@@ -3,28 +3,76 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-      .col#{$infix}-1  { max-width:$col;       }
-      .col#{$infix}-2  { max-width:($col * 2)  }
-      .col#{$infix}-3  { max-width:($col * 3)  }
-      .col#{$infix}-4  { max-width:($col * 4)  }
-      .col#{$infix}-5  { max-width:($col * 5)  }
-      .col#{$infix}-6  { max-width:($col * 6)  }
-      .col#{$infix}-7  { max-width:($col * 7)  }
-      .col#{$infix}-8  { max-width:($col * 8)  }
-      .col#{$infix}-9  { max-width:($col * 9)  }
-      .col#{$infix}-10 { max-width:($col * 10) }
-      .col#{$infix}-11 { max-width:($col * 11) }
-      .col#{$infix}-12 { max-width:($col * 12) }
+      .col#{$infix}-1  { 
+        -ms-flex: 0 0 ($col * 1);
+        flex:0 0 ($col * 1);
+        max-width:($col * 1);       
+      }
+      .col#{$infix}-2  {
+        -ms-flex: 0 0 ($col * 2);
+        flex:0 0 ($col * 2); 
+        max-width:($col * 2);  
+      }
+      .col#{$infix}-3  { 
+        -ms-flex: 0 0 ($col * 3);
+        flex:0 0 ($col * 3);
+        max-width:($col * 3)  
+      }
+      .col#{$infix}-4  { 
+        -ms-flex: 0 0 ($col * 4);
+        flex:0 0 ($col * 4);
+        max-width:($col * 4)  
+      }
+      .col#{$infix}-5  { 
+        -ms-flex: 0 0 ($col * 5);
+        flex:0 0 ($col * 5);
+        max-width:($col * 5)  
+      }
+      .col#{$infix}-6  { 
+        -ms-flex: 0 0 ($col * 6);
+        flex:0 0 ($col * 6);
+        max-width:($col * 6)  
+      }
+      .col#{$infix}-7  { 
+        -ms-flex: 0 0 ($col * 7);
+        flex:0 0 ($col * 7);
+        max-width:($col * 7)  
+      }
+      .col#{$infix}-8  { 
+        -ms-flex: 0 0 ($col * 8);
+        flex:0 0 ($col * 8);
+        max-width:($col * 8)  
+      }
+      .col#{$infix}-9  { 
+        -ms-flex: 0 0 ($col * 9);
+        flex:0 0 ($col * 9);
+        max-width:($col * 9)  
+      }
+      .col#{$infix}-10 { 
+        -ms-flex: 0 0 ($col * 10);
+        flex:0 0 ($col * 10);
+        max-width:($col * 10) 
+      }
+      .col#{$infix}-11 { 
+        -ms-flex: 0 0 ($col * 11);
+        flex:0 0 ($col * 11);
+        max-width:($col * 11) 
+      }
+      .col#{$infix}-12 { 
+        -ms-flex: 0 0 ($col * 12);
+        flex:0 0 ($col * 12);
+        max-width:($col * 12) 
+      }
   }
 }
 
 
 /* col */
 
-@mixin make-col($size, $columns: $grid-columns) {
-  flex: 0 0 percentage($size / $columns);
-  // Add a `max-width` to ensure content within each column does not blow out
-  // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
-  // do not appear to require this.
-  max-width: percentage($size / $columns);
-}
+// @mixin make-col($size, $columns: $grid-columns) {
+//   flex: 0 0 percentage($size / $columns);
+//   // Add a `max-width` to ensure content within each column does not blow out
+//   // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+//   // do not appear to require this.
+//   max-width: percentage($size / $columns);
+// }
