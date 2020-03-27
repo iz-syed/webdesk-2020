@@ -20,6 +20,13 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 $red: #fe4f4a;
 
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   #eff3f4 !default;
+$body-color:                $gray-900 !default;
+
 
 
 // light theme
@@ -30,9 +37,10 @@ $red: #fe4f4a;
     --secondary:#{$secondary};
     --secondary-rgb:#{$secondary-rgb};
 
-    --black:#{$black};
-    --white:#{$white};
-    --danger:#{$red};
+    --color-black:#{$black};
+    --color-white:#{$white};
+    --color-danger:#{$red};
+    --color-body:#{$body-bg};
 }
 
 // dark theme
@@ -44,12 +52,7 @@ $red: #fe4f4a;
     --secondary-rgb:#{$primary-rgb};
 }
 
-// Body
-//
-// Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
 
 
 // Grid breakpoints
@@ -219,5 +222,5 @@ $grid-gutter-width:           30px !default;
 
 
 .test {
-  border:1px solid var(--danger);
+  border:1px solid var(--color-danger);
 }
