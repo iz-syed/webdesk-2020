@@ -243,6 +243,10 @@ hr {
         content: "large-desktop - 1200 min"; } }
 
 /* clearfix */
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
 /* Booleans */
 @media print {
   *,
@@ -15141,6 +15145,25 @@ header {
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: var(--color-white); }
+
+/* _bigProductButtons */
+.bigProductButtons {
+  background-color: var(--color-white);
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  .bigProductButtons .container {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .bigProductButtons .container .btn-left {
+      padding-left: 20px; }
+      @media (max-width: 767px) {
+        .bigProductButtons .container .btn-left {
+          padding-left: 0; } }
+    .bigProductButtons .container .btn-right {
+      padding-right: 20px; }
+      @media (max-width: 767px) {
+        .bigProductButtons .container .btn-right {
+          padding-right: 0; } }
 
 /* Footer */
 .pointer {
