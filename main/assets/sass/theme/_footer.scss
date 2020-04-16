@@ -1,1 +1,11 @@
 /* Footer */ 
+
+footer {
+    background-image: linear-gradient(to top, #084470 0%, #1f9499 100%);
+    padding-top: 45px;
+    padding-bottom: 70px;
+
+    p {
+        color:var(--color-white);
+    }
+}
