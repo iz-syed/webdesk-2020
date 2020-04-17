@@ -1,0 +1,39 @@
+/* buttons */ 
+
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    color: $body-color;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    // @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+    // @include transition($btn-transition);
+  
+    &:hover {
+        // value
+    }
+  
+    &:focus,
+    &.focus {
+      outline: 0;
+    }
+  
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+        // value
+    }
+  
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        // value
+      &:focus {
+        // value
+      }
+    }
+  }
