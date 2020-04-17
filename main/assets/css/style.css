@@ -9,7 +9,8 @@
   --color-danger:#fe4f4a;
   --color-body:#eff3f4;
   --color-picton-blue: #46c8ee;
-  --color-white: #fff; }
+  --color-white: #fff;
+  --color-PuertoRico: #4ebda7; }
 
 .dark {
   --primary:#fff;
@@ -233,6 +234,9 @@ ul {
   cursor: pointer; }
   .btn:focus, .btn.focus {
     outline: 0; }
+  .btn.btn-block {
+    display: block;
+    width: 100%; }
 
 /* Avatar */
 .avatar {
@@ -15197,7 +15201,8 @@ footer {
     color: var(--color-white); }
 
 .btn-footer {
-  border-color: red; }
+  border-color: var(--color-PuertoRico);
+  color: var(--color-PuertoRico); }
 
 .pointer {
   cursor: pointer; }
