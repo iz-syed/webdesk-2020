@@ -1,16 +1,53 @@
 /* Footer */ 
 
-footer {
+.footer {
     background-image: linear-gradient(to top, #1f9499 0%, #084470 100%);
     padding-top: 45px;
     padding-bottom: 70px;
 
+
+    &_header {
+        font-size:16px;
+        color:var(--color-PuertoRico);
+        font-weight:normal;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+
+    &_links_list {
+        li {
+            a {
+                color:var(--color-white);
+                text-decoration:none;
+            }
+
+            padding-bottom:15px;
+
+            &:last-child {
+                padding-bottom:0;    
+            }
+        }
+    }
+
+    .tel,
+    .mail,
     p {
         color:var(--color-white);
     }
+
+    .tel {
+        text-decoration:none
+    }
+
 }
 
 .btn-footer {
     border-color:var(--color-PuertoRico);
     color:var(--color-PuertoRico);
+    transition:1s;
+
+    &:hover {
+        background-color:var(--color-PuertoRico);
+        color:var(--color-white);
+    }
 }
