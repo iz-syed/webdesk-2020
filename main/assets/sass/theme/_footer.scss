@@ -29,6 +29,12 @@
         }
     }
 
+    &-btn-group {
+        @include respond-to(phone) { 
+            margin-top:1rem;
+        }
+    }
+
     .tel,
     .mail,
     p {
@@ -45,8 +51,16 @@
     border-color:var(--color-PuertoRico);
     color:var(--color-PuertoRico);
     transition:1s;
+    margin-top:.5rem;
+    margin-bottom:.5rem;
+
 
     &:hover {
+        background-color:var(--color-PuertoRico);
+        color:var(--color-white);
+    }
+
+    @include respond-to(phone) { 
         background-color:var(--color-PuertoRico);
         color:var(--color-white);
     }
