@@ -234,7 +234,8 @@ address {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 1s; }
   .btn:focus, .btn.focus {
     outline: 0; }
   .btn.btn-block {
@@ -244,36 +245,36 @@ address {
 a.btn {
   text-decoration: none; }
 
-/* Typography */
-.alpha-9 {
-  opacity: .9; }
-
-.alpha-8 {
-  opacity: .8; }
-
-.alpha-7 {
-  opacity: .7; }
-
-.alpha-6 {
-  opacity: .6; }
-
-.alpha-5 {
-  opacity: .5; }
-
-.alpha-4 {
-  opacity: .4; }
-
-.alpha-3 {
-  opacity: .3; }
-
-.alpha-2 {
-  opacity: .2; }
-
-.alpha-1 {
-  opacity: .1; }
-
+/* Alpha */
 .alpha-0 {
   opacity: 0; }
+
+.alpha-1 {
+  opacity: 0.1; }
+
+.alpha-2 {
+  opacity: 0.2; }
+
+.alpha-3 {
+  opacity: 0.3; }
+
+.alpha-4 {
+  opacity: 0.4; }
+
+.alpha-5 {
+  opacity: 0.5; }
+
+.alpha-6 {
+  opacity: 0.6; }
+
+.alpha-7 {
+  opacity: 0.7; }
+
+.alpha-8 {
+  opacity: 0.8; }
+
+.alpha-9 {
+  opacity: 0.9; }
 
 /* Avatar */
 .avatar {
@@ -15288,8 +15289,7 @@ header {
   background-color: var(--color-black);
   color: var(--color-white);
   padding: 5px 15px;
-  border-color: transparent;
-  transition: 1s; }
+  border-color: transparent; }
   .btn-dark:hover {
     background-color: var(--color-white);
     color: var(--color-black);
@@ -15326,7 +15326,6 @@ header {
 .btn-footer {
   border-color: var(--color-PuertoRico);
   color: var(--color-PuertoRico);
-  transition: 1s;
   margin-top: .5rem;
   margin-bottom: .5rem; }
   .btn-footer:hover {
