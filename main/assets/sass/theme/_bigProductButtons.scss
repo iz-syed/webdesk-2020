@@ -9,18 +9,31 @@
         padding-right:30px;
 
         .btn-left {
-            background:url('../images/product-btn-bg-xl-2.jpg') no-repeat center;
+            .bg-image {
+                background:url('../images/product-btn-bg-xl-2.jpg') no-repeat center;
+                padding-top: 68.75%;
+            }
             margin-left:20px;
             @include respond-to(tablet-portrait) { 
                 margin-left:0;
             }
         }
         .btn-right {
-            background:url('../images/product-btn-bg-xl-1.jpg') no-repeat center;
+            .bg-image {
+                background:url('../images/product-btn-bg-xl-1.jpg') no-repeat center;
+                padding-top: 68.75%;
+            }
             margin-right:20px;
             @include respond-to(tablet-portrait) { 
                 margin-right:0;
             }
+        }
+
+        .bigProductButtons-content {
+            position:absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
         }
     }
 }
