@@ -15232,15 +15232,17 @@ header {
     padding-left: 30px;
     padding-right: 30px; }
     .bigProductButtons .container .btn-left {
-      padding-left: 20px; }
+      background: url("../images/product-btn-bg-xl-2.jpg") no-repeat center;
+      margin-left: 20px; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-left {
-          padding-left: 0; } }
+          margin-left: 0; } }
     .bigProductButtons .container .btn-right {
-      padding-right: 20px; }
+      background: url("../images/product-btn-bg-xl-1.jpg") no-repeat center;
+      margin-right: 20px; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-right {
-          padding-right: 0; } }
+          margin-right: 0; } }
 
 /* Footer */
 .footer {
