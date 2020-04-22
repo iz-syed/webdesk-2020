@@ -15284,6 +15284,17 @@ header {
       right: 50%;
       transform: translate(50%, -50%); }
 
+.btn-dark {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 5px 15px;
+  border-color: transparent;
+  transition: 1s; }
+  .btn-dark:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-black); }
+
 /* Footer */
 .footer {
   background-image: linear-gradient(to top, #1f9499 0%, #084470 100%);
