@@ -37,3 +37,17 @@
         }
     }
 }
+
+.btn-dark {
+    background-color:var(--color-black);
+    color:var(--color-white);
+    padding:5px 15px;
+    border-color:transparent;
+    transition:1s;
+
+    &:hover {
+        background-color:var(--color-white);
+        color:var(--color-black);
+        border-color:var(--color-black);
+    }
+}
