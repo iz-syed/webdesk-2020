@@ -244,6 +244,37 @@ address {
 a.btn {
   text-decoration: none; }
 
+/* Typography */
+.alpha-9 {
+  opacity: .9; }
+
+.alpha-8 {
+  opacity: .8; }
+
+.alpha-7 {
+  opacity: .7; }
+
+.alpha-6 {
+  opacity: .6; }
+
+.alpha-5 {
+  opacity: .5; }
+
+.alpha-4 {
+  opacity: .4; }
+
+.alpha-3 {
+  opacity: .3; }
+
+.alpha-2 {
+  opacity: .2; }
+
+.alpha-1 {
+  opacity: .1; }
+
+.alpha-0 {
+  opacity: 0; }
+
 /* Avatar */
 .avatar {
   width: 100px;
@@ -15232,17 +15263,26 @@ header {
     padding-left: 30px;
     padding-right: 30px; }
     .bigProductButtons .container .btn-left {
-      background: url("../images/product-btn-bg-xl-2.jpg") no-repeat center;
       margin-left: 20px; }
+      .bigProductButtons .container .btn-left .bg-image {
+        background: url("../images/product-btn-bg-xl-2.jpg") no-repeat center;
+        padding-top: 68.75%; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-left {
           margin-left: 0; } }
     .bigProductButtons .container .btn-right {
-      background: url("../images/product-btn-bg-xl-1.jpg") no-repeat center;
       margin-right: 20px; }
+      .bigProductButtons .container .btn-right .bg-image {
+        background: url("../images/product-btn-bg-xl-1.jpg") no-repeat center;
+        padding-top: 68.75%; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-right {
           margin-right: 0; } }
+    .bigProductButtons .container .bigProductButtons-content {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%); }
 
 /* Footer */
 .footer {
