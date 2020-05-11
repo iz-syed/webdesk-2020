@@ -1,0 +1,20 @@
+/* font sizes */ 
+
+$sizes: (
+  '8': '8px', 
+  '9': '9px', 
+  '10': '10px', 
+  "11": "11px", 
+  "12": "12px", 
+  "13": "13px", 
+  "14": "14px", 
+  "15": "15px", 
+  "16": "16px", 
+  "17": "17px");
+
+// alpha
+@each $value in $sizes {
+  .font-#{nth($value, 1)} {
+    font-size:#{nth($value, 2)};
+  }
+}
