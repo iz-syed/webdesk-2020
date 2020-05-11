@@ -1,0 +1,19 @@
+/* pagination */ 
+
+.pagination {
+    ul {
+        li {
+            padding-right:15px;
+            a {
+                color:#3f4040;
+                text-decoration:none;
+            }
+
+            &.active {
+                a {
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
