@@ -5,3 +5,14 @@ header {
     padding-bottom:10px;
     background-color:var(--color-white);
 }
+
+#navigation{
+ul{display: flex;
+	li{
+		a{color: black; padding: 10px 15px;font-weight: 700; text-decoration: none; font-size: 13px;
+		&:hover{color: #1f4082;}
+		}
+	}
+
+ }
+}

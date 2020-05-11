@@ -13,8 +13,8 @@ $font-path-roboto:         "../fonts/robotocondensed" !default;
 
 @font-face {
     font-family: 'robotoBold';
-    src: url('#{$font-path-roboto}/bold/robotocondensed-webfont.woff2') format('woff2'),
-         url('#{$font-path-roboto}/bold/robotocondensed-webfont.woff') format('woff');
+    src: url('#{$font-path-roboto}/bold/robotocondensed-bold.woff2') format('woff2'),
+         url('#{$font-path-roboto}/bold/robotocondensed-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,6 +39,21 @@ $title-text-letter-spacing: .4;
 
 $title-text-alt: 'robotoLight', sans-serif;
 $title-text-letter-spacing: .4;
+
+
+$font-path-slick:         "../fonts/slick" !default;
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('#{$font-path-slick}/slick.eot');
+    src: url('#{$font-path-slick}/slick.eot?#iefix') format('embedded-opentype'), url('#{$font-path-slick}/slick.woff') format('woff'), url('#{$font-path-slick}/slick.ttf') format('truetype'), url('#{$font-path-slick}/slick.svg#slick') format('svg');
+}
+
+
 
 // Type face
 @mixin text-style($type) {
