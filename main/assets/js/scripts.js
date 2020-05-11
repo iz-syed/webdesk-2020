@@ -10692,4 +10692,24 @@ consoleLog("hello-dblue", "DodgerBlue");
 consoleLog("hello-error", "error");
 consoleLog("hello-warn", "warning");
 
+//homepage main banner - slick slider
 $('.single-item').slick();
+
+
+// left sidebar toggle
+
+var acc = document.getElementsByClassName("toggleNav");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
