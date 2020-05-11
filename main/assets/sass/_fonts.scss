@@ -1,7 +1,7 @@
 /* font custom 0001 */ 
 
 $font-path-roboto:         "../fonts/robotocondensed" !default;
-
+$font-path-slick:         "../fonts/slick" !default;
 
 @font-face {
     font-family: 'robotoRegular';
@@ -27,6 +27,15 @@ $font-path-roboto:         "../fonts/robotocondensed" !default;
     font-style: normal;
 }
 
+/* slick font Icon */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('#{$font-path-slick}/slick.eot');
+    src: url('#{$font-path-slick}/slick.eot?#iefix') format('embedded-opentype'), url('#{$font-path-slick}/slick.woff') format('woff'), url('#{$font-path-slick}/slick.ttf') format('truetype'), url('#{$font-path-slick}/slick.svg#slick') format('svg');
+}
 
 
   
@@ -41,17 +50,8 @@ $title-text-alt: 'robotoLight', sans-serif;
 $title-text-letter-spacing: .4;
 
 
-$font-path-slick:         "../fonts/slick" !default;
-/* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
 
-    src: url('#{$font-path-slick}/slick.eot');
-    src: url('#{$font-path-slick}/slick.eot?#iefix') format('embedded-opentype'), url('#{$font-path-slick}/slick.woff') format('woff'), url('#{$font-path-slick}/slick.ttf') format('truetype'), url('#{$font-path-slick}/slick.svg#slick') format('svg');
-}
+
 
 
 
