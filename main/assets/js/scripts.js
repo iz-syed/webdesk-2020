@@ -10691,7 +10691,3 @@ consoleLog("hello-succes", "success");
 consoleLog("hello-dblue", "DodgerBlue");
 consoleLog("hello-error", "error");
 consoleLog("hello-warn", "warning");
-
-
-//homepage main banner - slick slider
-$('.single-item').slick();
