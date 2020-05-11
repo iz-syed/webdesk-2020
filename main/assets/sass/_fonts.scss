@@ -19,25 +19,25 @@ $font-path-roboto:         "../fonts/robotocondensed" !default;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'robotoLight';
-    src: url('#{$font-path-roboto}/light/robotocondensed-webfont.woff2') format('woff2'),
-         url('#{$font-path-roboto}/light/robotocondensed-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'robotoLight';
+//     src: url('#{$font-path-roboto}/light/robotocondensed-webfont.woff2') format('woff2'),
+//          url('#{$font-path-roboto}/light/robotocondensed-webfont.woff') format('woff');
+//     font-weight: 200;
+//     font-style: normal;
+// }
 
 
 
   
-$body-text: 'robotoRegular', sans-serif;
+$body-text: 'Roboto Condensed', sans-serif; 
 $body-text-letter-spacing: 0.02em;
 $body-text-line-height: 1.4;
 
-$title-text: 'robotoBold', sans-serif;
+$title-text: 'Roboto Condensed', sans-serif; 
 $title-text-letter-spacing: .4;
 
-$title-text-alt: 'robotoLight', sans-serif;
+$title-text-alt: 'Roboto Condensed', sans-serif;
 $title-text-letter-spacing: .4;
 
 
@@ -65,6 +65,7 @@ $font-path-slick:         "../fonts/slick" !default;
     @else if $type == 'title-alt' {
         font-family: $title-text-alt;
         letter-spacing: $title-text-letter-spacing;
+        font-weight: 700;
   }
     
   @else if $type == 'body' {

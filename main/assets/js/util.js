@@ -25,3 +25,13 @@ consoleLog("hello-succes", "success");
 consoleLog("hello-dblue", "DodgerBlue");
 consoleLog("hello-error", "error");
 consoleLog("hello-warn", "warning");
+
+//$('.single-item').slick();
+
+
+
+$(".single-item").slick({
+	dots: true
+});
+
+

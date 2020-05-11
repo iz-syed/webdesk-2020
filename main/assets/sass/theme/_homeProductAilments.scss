@@ -1,0 +1,19 @@
+.product-ailments{background: #eef4f5; padding: 10px 0 40px;}
+
+ul.products{display: flex; font-size: 12px; justify-content: space-between; flex-wrap: wrap;
+   li{ width: 170px; margin-bottom: 40px;
+    .product-item{text-decoration: none;
+    h2{font-size: 12px; font-weight: 700; color: #3871b7; font-family: robotoBold;}
+    p{color: #000; font-family: 'robotoRegular';}
+    .btn-blue-sm{background: #125998; color: white; padding: 5px 15px; font-size: 11px;}
+
+     &:hover{-webkit-transition: 1s;-o-transition: 1s;transition: 1s;
+            .btn-blue-sm{background: #000;}
+        h2{color: black; text-decoration: underline;}
+        }
+    
+
+    }
+    
+   }
+}
