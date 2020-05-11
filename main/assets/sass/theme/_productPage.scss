@@ -9,3 +9,29 @@
         }
     }
 }
+
+.productWrap {
+    background-color:var(--color-white);
+    margin:13px;
+
+    &-image {
+
+    }
+
+    &-title {
+        color:var(--color-dark-blue);
+        font-size:18px;
+    }
+
+    &-description {
+        color:#3b3b3b;
+        font-size:12px;
+    }
+
+    a {
+        display:block;
+        text-decoration:none;
+    }
+
+
+}
