@@ -104,6 +104,11 @@ ul {
 address {
   font-style: normal; }
 
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 /* Float */
 .float-left {
   float: left !important; }
@@ -15623,6 +15628,12 @@ header {
   .productWrap a {
     display: block;
     text-decoration: none; }
+
+.color-blue {
+  color: var(--color-dark-blue); }
+
+.color-gray {
+  color: #5f5f5f; }
 
 /* pagination */
 .pagination ul li {
