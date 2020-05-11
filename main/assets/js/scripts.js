@@ -10692,8 +10692,11 @@ consoleLog("hello-dblue", "DodgerBlue");
 consoleLog("hello-error", "error");
 consoleLog("hello-warn", "warning");
 
-//homepage main banner - slick slider
-$('.single-item').slick();
+//$('.single-item').slick();
+
+$(".single-item").slick({
+	dots: true
+});
 
 
 // left sidebar toggle

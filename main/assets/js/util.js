@@ -28,7 +28,6 @@ consoleLog("hello-warn", "warning");
 
 //$('.single-item').slick();
 
-
 $(".single-item").slick({
 	dots: true
 });

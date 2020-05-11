@@ -11,7 +11,8 @@
   --color-body:#eff3f4;
   --color-picton-blue: #46c8ee;
   --color-white: #fff;
-  --color-PuertoRico: #4ebda7; }
+  --color-PuertoRico: #4ebda7;
+  --color-dark-blue: #044d9f; }
 
 .dark {
   --primary:#fff;
@@ -102,6 +103,11 @@ ul {
 /* Typography */
 address {
   font-style: normal; }
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 /* Float */
 .float-left {
@@ -276,6 +282,37 @@ a.btn {
 
 .alpha-9 {
   opacity: 0.9; }
+
+/* font sizes */
+.font-8 {
+  font-size: 8px; }
+
+.font-9 {
+  font-size: 9px; }
+
+.font-10 {
+  font-size: 10px; }
+
+.font-11 {
+  font-size: 11px; }
+
+.font-12 {
+  font-size: 12px; }
+
+.font-13 {
+  font-size: 13px; }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-15 {
+  font-size: 15px; }
+
+.font-16 {
+  font-size: 16px; }
+
+.font-17 {
+  font-size: 17px; }
 
 /* Avatar */
 .avatar {
@@ -15187,7 +15224,7 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal; }
 
-/* Icons */
+/* slick font Icon */
 @font-face {
   font-family: 'slick';
   font-weight: normal;
@@ -15742,6 +15779,83 @@ ul.products {
     justify-content: space-between; }
     .paintech-brands ul.pmt-brands-logo li {
       margin: 20px; }
+
+/* product page */
+.product-container .productFilter {
+  color: #6b6b6b; }
+  .product-container .productFilter i {
+    display: inline-block; }
+
+.productWrap {
+  background-color: var(--color-white);
+  margin: 13px; }
+  .productWrap-title {
+    color: var(--color-dark-blue);
+    font-size: 18px; }
+  .productWrap-description {
+    color: #3b3b3b;
+    font-size: 12px; }
+  .productWrap a {
+    display: block;
+    text-decoration: none; }
+
+.color-blue {
+  color: var(--color-dark-blue); }
+
+.color-gray {
+  color: #5f5f5f; }
+
+/* pagination */
+.pagination ul li {
+  padding-right: 15px; }
+  .pagination ul li a {
+    color: #3f4040;
+    text-decoration: none; }
+  .pagination ul li.active a {
+    font-weight: bold; }
+
+.left-sidebar {
+  padding: 5px; }
+
+.toggleNav {
+  color: var(--color-black);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid var(--color-black); }
+  .toggleNav:after {
+    content: "\f067";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    right: 5px; }
+  .toggleNav.active {
+    border-color: transparent; }
+    .toggleNav.active:after {
+      content: "\f068"; }
+
+.panel {
+  padding: 0 18px 18px;
+  display: none;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid var(--color-black); }
+  .panel li a {
+    color: var(--color-black);
+    line-height: 22px;
+    text-decoration: none; }
 
 /* Footer */
 .footer {
