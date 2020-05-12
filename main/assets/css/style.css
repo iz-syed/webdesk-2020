@@ -68,6 +68,10 @@ ul {
   padding: 0;
   margin: 0; }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
 /* text */
 .text-justify {
   text-align: justify !important; }
@@ -313,6 +317,18 @@ a.btn {
 
 .font-17 {
   font-size: 17px; }
+
+.font-18 {
+  font-size: 18px; }
+
+.font-19 {
+  font-size: 19px; }
+
+.font-20 {
+  font-size: 20px; }
+
+.font-normal {
+  font-weight: normal; }
 
 /* Avatar */
 .avatar {
@@ -15805,6 +15821,28 @@ ul.products {
 .color-gray {
   color: #5f5f5f; }
 
+.btn-outline-blue {
+  border-color: var(--color-dark-blue);
+  color: var(--color-dark-blue);
+  padding: 5px 15px; }
+  .btn-outline-blue:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue); }
+
+.btn-filled-blue {
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border-color: var(--color-dark-blue);
+  padding: 5px 15px; }
+  .btn-filled-blue:hover {
+    color: var(--color-dark-blue);
+    background-color: transparent; }
+
+.mainTitle {
+  color: var(--color-dark-blue);
+  font-size: 36px;
+  font-weight: normal; }
+
 /* pagination */
 .pagination ul li {
   padding-right: 15px; }
@@ -15857,6 +15895,37 @@ ul.products {
     line-height: 22px;
     text-decoration: none; }
 
+/* breadcrumb */
+[aria-label="breadcrumb"] {
+  background-color: #eef4f5; }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin: 0;
+  list-style: none;
+  background-color: #eef4f5; }
+
+.breadcrumb-item {
+  text-transform: uppercase; }
+  .breadcrumb-item a {
+    color: #4e4e4e;
+    text-decoration: none; }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem; }
+    .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #4e4e4e;
+      content: "/"; }
+  .breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: underline; }
+  .breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: none; }
+  .breadcrumb-item.active {
+    color: #4e4e4e; }
+
 /* Footer */
 .footer {
   background-image: linear-gradient(to top, #1f9499 0%, #084470 100%);
@@ -15900,3 +15969,22 @@ ul.products {
 
 .pointer {
   cursor: pointer; }
+
+.bg-gray-light {
+  background-color: #eef4f5; }
+
+.bg-gray-dark {
+  background-color: #dde9eb; }
+
+ul.list {
+  padding-left: 20px; }
+  ul.list li {
+    font-size: 16px;
+    line-height: 36px;
+    list-style-type: disc; }
+
+ul.unlist {
+  padding-left: 0; }
+  ul.unlist li {
+    font-size: 16px;
+    line-height: 36px; }

@@ -10,9 +10,35 @@
 @import 'theme/productPage';
 @import 'theme/pagination';
 @import 'theme/leftSideBar';
+@import 'theme/breadcrumb';
 @import 'theme/footer';
 
 
 .pointer {
     cursor:pointer
+}
+
+.bg-gray-light {
+    background-color:#eef4f5;
+}
+
+.bg-gray-dark {
+    background-color:#dde9eb;
+}
+
+ul.list {
+    padding-left: 20px;
+    li {
+        font-size: 16px;
+        line-height: 36px;
+        list-style-type: disc;
+    }
+}
+
+ul.unlist {
+    padding-left: 0;
+    li {
+        font-size: 16px;
+        line-height: 36px;
+    }
 }
