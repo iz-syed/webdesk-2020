@@ -10695,8 +10695,19 @@ consoleLog("hello-warn", "warning");
 //$('.single-item').slick();
 
 $(".single-item").slick({
-	dots: true
+	dots: true,
+	arrows: true,
+	prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+	nextArrow:"<button type='button' class='slick-next pull-right'></button>"
 });
+
+$(".product-detail-slider").slick({
+  dots: true,
+  arrows: true,
+  prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+});
+
 
 
 // left sidebar toggle

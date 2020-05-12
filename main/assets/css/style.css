@@ -15500,8 +15500,12 @@ body {
   background-color: var(--color-body);
   font-size: 12px; }
 
+.bodyWhiteBg {
+  background: #fff; }
+
 #bodyContent {
-  width: 100%; }
+  width: 100%;
+  font-size: 15px; }
 
 h1.heading-center {
   font-size: 36px;
@@ -15606,6 +15610,7 @@ header {
     #navigation ul li a:hover {
       color: #4ea0c1; }
 
+/* Homepage main slider */
 .homemainslider {
   background: #55cab6;
   /* Old browsers */
@@ -15615,7 +15620,7 @@ header {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #55cab6 0%, #4a97c4 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cab6', endColorstr='#4a97c4',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cab6', endColorstr='#4a97c4', GradientType=1);
   /* IE6-9 */ }
   .homemainslider .slidebg {
     background: #64cdb5;
@@ -15658,11 +15663,6 @@ header {
         text-align: center; }
         .homemainslider .slidebg .slide-caption .call-action:hover {
           background: #383838; }
-  .homemainslider .slick-prev {
-    left: 20px;
-    z-index: 1; }
-  .homemainslider .slick-next {
-    right: 20px; }
   .homemainslider .slide-item1 .slide-img {
     background: url(../images/homeSlide/slide1.png) center right no-repeat; }
   .homemainslider .slide-item2 .slide-img {
@@ -15685,6 +15685,96 @@ header {
     background: url(../images/homeSlide/slide7.png) center right no-repeat; }
   .homemainslider .slide-item7 .slidebg {
     background: #68d5b3; }
+  .homemainslider .slick-prev {
+    left: 20px;
+    z-index: 1; }
+  .homemainslider .slick-next {
+    right: 20px; }
+  .homemainslider .single-item .slick-prev {
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrow-left-wh.png) center center no-repeat;
+    opacity: .6; }
+    .homemainslider .single-item .slick-prev:before {
+      display: none; }
+    .homemainslider .single-item .slick-prev:hover {
+      opacity: 1; }
+  .homemainslider .single-item .slick-next {
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrow-right-wh.png) center center no-repeat;
+    opacity: .6; }
+    .homemainslider .single-item .slick-next:before {
+      display: none; }
+    .homemainslider .single-item .slick-next:hover {
+      opacity: 1; }
+  .homemainslider .slick-dotted.slick-slider {
+    margin-bottom: 0; }
+  .homemainslider .slick-dots {
+    right: 12%;
+    bottom: 25px;
+    text-align: right; }
+  .homemainslider .slick-dots li {
+    width: 10px; }
+  .homemainslider .slick-dots li button:before {
+    font-size: 12px;
+    color: transparent;
+    width: 11px;
+    height: 11px;
+    border: 1px solid white;
+    border-radius: 100%;
+    opacity: 1; }
+  .homemainslider .slick-dots li.slick-active button:before {
+    background: #37a4ae; }
+
+/*Product detail page slider*/
+.product-slider {
+  background: #fff; }
+  .product-slider .product-detail-slider .slick-prev {
+    left: 20px;
+    z-index: 1; }
+  .product-slider .product-detail-slider .slick-next {
+    right: 20px; }
+  .product-slider .product-detail-slider .slick-prev {
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrow-left.png) center center no-repeat;
+    opacity: .6; }
+    .product-slider .product-detail-slider .slick-prev:before {
+      display: none; }
+    .product-slider .product-detail-slider .slick-prev:hover {
+      opacity: 1;
+      background: url(../images/arrow-left-over.png) center center no-repeat; }
+  .product-slider .product-detail-slider .slick-next {
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrow-right.png) center center no-repeat;
+    opacity: .6; }
+    .product-slider .product-detail-slider .slick-next:before {
+      display: none; }
+    .product-slider .product-detail-slider .slick-next:hover {
+      opacity: 1;
+      background: url(../images/arrow-right-over.png) center center no-repeat; }
+  .product-slider .product-detail-slider .slick-dots {
+    bottom: -40px; }
+  .product-slider .product-detail-slider .slick-dots li {
+    width: 10px; }
+    .product-slider .product-detail-slider .slick-dots li button:before {
+      font-size: 12px;
+      color: transparent;
+      width: 11px;
+      height: 11px;
+      border: 1px solid #5e6366;
+      border-radius: 100%;
+      opacity: 1; }
+  .product-slider .product-detail-slider .slick-dots li.slick-active button:before {
+    background: #959595;
+    border: 1px solid #5e6366; }
+  .product-slider .product-detail-slider .slide-item {
+    text-align: center; }
+    .product-slider .product-detail-slider .slide-item img {
+      max-width: 474px;
+      margin: auto; }
 
 /* _bigProductButtons */
 .bigProductButtons {
@@ -15775,6 +15865,7 @@ ul.products {
           color: black;
           text-decoration: underline; }
 
+/* Home brands logos */
 .paintech-brands {
   padding: 20px 30px 30px 30px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8dc9db+0,a3ddd5+100 */
@@ -15795,8 +15886,41 @@ ul.products {
     justify-content: space-between; }
     .paintech-brands ul.pmt-brands-logo li {
       margin: 20px; }
+      .paintech-brands ul.pmt-brands-logo li:hover img {
+        -webkit-filter: drop-shadow(0px 2px 0px #37a4ae);
+        filter: drop-shadow(0px 2px 0px #37a4ae); }
+
+/* Page Heading */
+.page-heading {
+  background: #0080cd;
+  color: #fff;
+  min-height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .page-heading .container {
+    /*max-width: 770px;*/
+    padding-left: 10%;
+    position: relative; }
+  .page-heading h1 {
+    font-size: 31px;
+    font-weight: 400;
+    max-width: 265px;
+    text-transform: uppercase; }
+  .page-heading p {
+    font-size: 14px;
+    max-width: 265px; }
+  .page-heading.category-picked-generic .container:after {
+    background: url(../images/heading-banner/pmt-logo-heading.png) bottom right no-repeat;
+    width: 147px;
+    height: 73px;
+    content: '';
+    position: absolute;
+    bottom: -52px;
+    right: 0; }
 
 /* product page */
+/*Product detail page slider style is in _slider.scss*/
 .product-container .productFilter {
   color: #6b6b6b; }
   .product-container .productFilter i {
@@ -15900,9 +16024,10 @@ ul.products {
   background-color: #eef4f5; }
 
 .breadcrumb {
+  font-size: 10px;
   display: flex;
   flex-wrap: wrap;
-  padding: .75rem 1rem;
+  padding: 8px 0;
   margin: 0;
   list-style: none;
   background-color: #eef4f5; }
@@ -15912,6 +16037,8 @@ ul.products {
   .breadcrumb-item a {
     color: #4e4e4e;
     text-decoration: none; }
+    .breadcrumb-item a:hover {
+      text-decoration: underline; }
   .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem; }
     .breadcrumb-item + .breadcrumb-item::before {
@@ -15925,6 +16052,22 @@ ul.products {
     text-decoration: none; }
   .breadcrumb-item.active {
     color: #4e4e4e; }
+
+/* government page */
+.government-container .introcontent {
+  display: flex; }
+  .government-container .introcontent section {
+    margin-right: 30px; }
+  .government-container .introcontent aside {
+    margin-left: 30px; }
+
+.gov_logos {
+  border: 1px solid #00447a;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column; }
+  .gov_logos img {
+    margin: 5px 0; }
 
 /* Footer */
 .footer {

@@ -1,0 +1,26 @@
+/* government page */
+
+.government-container {
+
+    .introcontent{display: flex;
+        section{
+            margin-right: 30px;
+        }
+
+        aside{
+margin-left: 30px;
+        }
+    }
+
+}
+
+.gov_logos {
+    border: 1px solid #00447a;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        margin:5px 0;
+    }
+}
