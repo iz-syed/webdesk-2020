@@ -15224,12 +15224,6 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'robotoLight';
-  src: url("../fonts/robotocondensed/light/robotocondensed-webfont.woff2") format("woff2"), url("../fonts/robotocondensed/light/robotocondensed-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /* slick font Icon */
 @font-face {
   font-family: 'slick';
@@ -15239,19 +15233,20 @@ readers do not read off random characters that represent icons */
   src: url("../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick/slick.woff") format("woff"), url("../fonts/slick/slick.ttf") format("truetype"), url("../fonts/slick/slick.svg#slick") format("svg"); }
 
 body {
-  font-family: "robotoRegular", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.4; }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: "robotoBold", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.4; }
 
 h4, .h4 {
-  font-family: "robotoLight", sans-serif;
-  letter-spacing: 0.4; }
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.4;
+  font-weight: 700; }
 
 /* Slider */
 .slick-slider {
@@ -15489,6 +15484,42 @@ body {
   background-color: var(--color-body);
   font-size: 12px; }
 
+#bodyContent {
+  width: 100%; }
+
+h1.heading-center {
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #125998;
+  text-align: center;
+  position: relative; }
+  h1.heading-center small {
+    font-size: 14px;
+    display: block; }
+  h1.heading-center.white {
+    color: white; }
+  h1.heading-center:after {
+    background: #55cab6;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #55cab6 0%, #4a97c4 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #55cab6 0%, #4a97c4 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #55cab6 0%, #4a97c4 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cab6', endColorstr='#4a97c4',GradientType=1 );
+    /* IE6-9 */
+    content: '';
+    width: 195px;
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
 /* container */
 .container {
   width: 100%;
@@ -15505,9 +15536,9 @@ body {
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1044px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1044px; } }
 
 /* topbar */
 .topbar {
@@ -15538,9 +15569,15 @@ body {
 
 /* Header */
 header {
-  padding-top: 20px;
-  padding-bottom: 10px;
   background-color: var(--color-white); }
+  header .logo-nav-search {
+    padding: 12px; }
+
+.search-wrapper .fa-search {
+  font-size: 17px;
+  font-weight: bold; }
+  .search-wrapper .fa-search:hover {
+    color: #4ea0c1; }
 
 #navigation ul {
   display: flex; }
@@ -15551,7 +15588,7 @@ header {
     text-decoration: none;
     font-size: 13px; }
     #navigation ul li a:hover {
-      color: #1f4082; }
+      color: #4ea0c1; }
 
 .homemainslider {
   background: #55cab6;
@@ -15564,23 +15601,97 @@ header {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cab6', endColorstr='#4a97c4',GradientType=1 );
   /* IE6-9 */ }
-  .homemainslider .slick-slide {
-    background: #55d2b4 url(../images/homeSlide/homeslidebg.png) center right no-repeat;
-    min-height: 414px; }
+  .homemainslider .slidebg {
+    background: #64cdb5;
+    position: relative; }
+    .homemainslider .slidebg .slide-img {
+      min-height: 414px; }
+    .homemainslider .slidebg .slide-caption {
+      text-transform: uppercase;
+      color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: left; }
+      .homemainslider .slidebg .slide-caption h3 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        font-weight: 300;
+        font-family: "Roboto Condensed", sans-serif;
+        text-shadow: 2px 2px 1px #89a4ab; }
+      .homemainslider .slidebg .slide-caption h2 {
+        font-size: 32px;
+        margin: 0 0 15px;
+        line-height: normal;
+        font-weight: 300;
+        font-family: "Roboto Condensed", sans-serif;
+        text-shadow: 2px 2px 1px #89a4ab; }
+      .homemainslider .slidebg .slide-caption .call-action {
+        font-size: 12px;
+        color: white;
+        background: #000;
+        text-decoration: none;
+        padding: 8px 15px;
+        width: 108px;
+        text-align: center; }
+        .homemainslider .slidebg .slide-caption .call-action:hover {
+          background: #383838; }
+  .homemainslider .slick-prev {
+    left: 20px;
+    z-index: 1; }
+  .homemainslider .slick-next {
+    right: 20px; }
+  .homemainslider .slide-item1 .slide-img {
+    background: url(../images/homeSlide/slide1.png) center right no-repeat; }
+  .homemainslider .slide-item2 .slide-img {
+    background: url(../images/homeSlide/slide2.png) center right no-repeat; }
+  .homemainslider .slide-item3 .slide-img {
+    background: url(../images/homeSlide/slide3.png) center right no-repeat; }
+  .homemainslider .slide-item4 .slide-img {
+    background: url(../images/homeSlide/slide4.png) center right no-repeat; }
+  .homemainslider .slide-item4 .slidebg {
+    background: #65cec5; }
+  .homemainslider .slide-item5 .slide-img {
+    background: url(../images/homeSlide/slide5.png) center right no-repeat; }
+  .homemainslider .slide-item5 .slidebg {
+    background: #68d5b3; }
+  .homemainslider .slide-item6 .slide-img {
+    background: url(../images/homeSlide/slide6.png) center right no-repeat; }
+  .homemainslider .slide-item6 .slidebg {
+    background: #4ec8b9; }
+  .homemainslider .slide-item7 .slide-img {
+    background: url(../images/homeSlide/slide7.png) center right no-repeat; }
+  .homemainslider .slide-item7 .slidebg {
+    background: #68d5b3; }
 
 /* _bigProductButtons */
 .bigProductButtons {
   background-color: var(--color-white);
   padding-top: 35px;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  color: white; }
+  .bigProductButtons h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0; }
+  .bigProductButtons p {
+    font-size: 14px;
+    letter-spacing: 2px; }
   .bigProductButtons .container {
     padding-left: 30px;
     padding-right: 30px; }
     .bigProductButtons .container .btn-left {
       margin-left: 20px; }
       .bigProductButtons .container .btn-left .bg-image {
-        background: url("../images/product-btn-bg-xl-2.jpg") no-repeat center;
-        padding-top: 68.75%; }
+        background: url("../images/neck-cloud.jpg") no-repeat center;
+        background-size: 100%;
+        height: 289px; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-left {
           margin-left: 0;
@@ -15588,8 +15699,9 @@ header {
     .bigProductButtons .container .btn-right {
       margin-right: 20px; }
       .bigProductButtons .container .btn-right .bg-image {
-        background: url("../images/product-btn-bg-xl-1.jpg") no-repeat center;
-        padding-top: 68.75%; }
+        background: url("../images/thermo-relief-s.jpg") no-repeat center;
+        background-size: 100%;
+        height: 289px; }
       @media (max-width: 767px) {
         .bigProductButtons .container .btn-right {
           margin-right: 0;
@@ -15603,13 +15715,70 @@ header {
 .btn-dark {
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: 5px 15px;
+  padding: 8px 25px;
   border-color: transparent; }
   .btn-dark:hover {
     background-color: var(--color-white);
     color: var(--color-black);
     border-color: var(--color-black); }
 
+.product-ailments {
+  background: #eef4f5;
+  padding: 10px 0 40px; }
+
+ul.products {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  ul.products li {
+    width: 170px;
+    margin-bottom: 40px; }
+    ul.products li .product-item {
+      text-decoration: none; }
+      ul.products li .product-item h2 {
+        font-size: 12px;
+        font-weight: 700;
+        color: #3871b7;
+        font-family: robotoBold; }
+      ul.products li .product-item p {
+        color: #000;
+        font-family: 'robotoRegular'; }
+      ul.products li .product-item .btn-blue-sm {
+        background: #125998;
+        color: white;
+        padding: 5px 15px;
+        font-size: 11px; }
+      ul.products li .product-item:hover {
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+        ul.products li .product-item:hover .btn-blue-sm {
+          background: #000; }
+        ul.products li .product-item:hover h2 {
+          color: black;
+          text-decoration: underline; }
+
+.paintech-brands {
+  padding: 20px 30px 30px 30px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8dc9db+0,a3ddd5+100 */
+  background: #8dc9db;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8dc9db 0%, #a3ddd5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #8dc9db 0%, #a3ddd5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #8dc9db 0%, #a3ddd5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dc9db', endColorstr='#a3ddd5',GradientType=0 );
+  /* IE6-9 */ }
+  .paintech-brands ul.pmt-brands-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .paintech-brands ul.pmt-brands-logo li {
+      margin: 20px; }
 
 /* product page */
 .product-container .productFilter {

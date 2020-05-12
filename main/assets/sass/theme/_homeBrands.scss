@@ -1,0 +1,14 @@
+.paintech-brands{padding:20px 30px 30px 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8dc9db+0,a3ddd5+100 */
+background: rgb(141,201,219); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(141,201,219,1) 0%, rgba(163,221,213,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(141,201,219,1) 0%,rgba(163,221,213,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(141,201,219,1) 0%,rgba(163,221,213,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dc9db', endColorstr='#a3ddd5',GradientType=0 ); /* IE6-9 */
+
+ul.pmt-brands-logo{
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    li{margin: 20px;}
+}
+
+}

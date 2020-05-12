@@ -1,16 +1,23 @@
 /* Header */ 
 
 header {
-    padding-top:20px;
-    padding-bottom:10px;
     background-color:var(--color-white);
+
+    .logo-nav-search {padding: 12px;}
+}
+
+
+.search-wrapper .fa-search {
+    font-size: 17px;
+    font-weight: bold;
+    &:hover{color: #4ea0c1;}
 }
 
 #navigation{
 ul{display: flex;
 	li{
 		a{color: black; padding: 10px 15px;font-weight: 700; text-decoration: none; font-size: 13px;
-		&:hover{color: #1f4082;}
+		&:hover{color: #4ea0c1;}
 		}
 	}
 
