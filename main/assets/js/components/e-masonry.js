@@ -7,7 +7,7 @@ function resizeGridItem(item){
 }
 
 function resizeAllGridItems(){
-  allItems = document.getElementsByClassName("item");
+  allItems = document.getElementsByClassName("grid-item");
   for(x=0;x<allItems.length;x++){
     resizeGridItem(allItems[x]);
   }
@@ -21,7 +21,7 @@ function resizeInstance(instance){
 window.onload = resizeAllGridItems();
 window.addEventListener("resize", resizeAllGridItems);
 
-allItems = document.getElementsByClassName("item");
+allItems = document.getElementsByClassName("grid-item");
 // for(x=0;x<allItems.length;x++){
 //   imagesLoaded( allItems[x], resizeInstance);
 // }
