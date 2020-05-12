@@ -8,7 +8,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dc9db', end
 
 ul.pmt-brands-logo{
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-    li{margin: 20px;}
+    li{margin: 20px;
+    	&:hover img{-webkit-filter: drop-shadow(0px 2px 0px #37a4ae);filter: drop-shadow(0px 2px 0px #37a4ae);}
+    }
 }
 
 }

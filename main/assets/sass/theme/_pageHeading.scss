@@ -1,0 +1,32 @@
+.breadcrumb{background:#eef4f5; padding:8px 0; color: #4e4e4e; font-size: 9px; text-transform: uppercase; font-family: 'robotoRegular'; font-weight: 400;
+a, strong{color: #4e4e4e; font-weight: 400; text-decoration: none;}
+}
+
+.page-heading{background: #0080cd; color: #fff; min-height: 265px; display: flex; flex-direction: column; justify-content: center;
+    .container{/*max-width: 770px;*/padding-left: 10%; position: relative;}
+    h1{font-size: 31px;font-weight: 400; max-width: 265px; text-transform: uppercase;}
+    p{font-size: 14px; max-width: 265px;}
+
+    &.products-listing{
+        //background: #0080cd url(../images/heading-banner/product-page.png) center right no-repeat;
+    }
+    &.category-picked-products{
+
+    }
+    &.category-picked-generic{
+        .container{
+            &:after{background:url(../images/heading-banner/pmt-logo-heading.png) bottom right no-repeat; width: 147px; height: 73px; content: '';
+            position: absolute; bottom:-52px; right: 0;
+            }
+        }
+    }
+
+    &.medical-order{
+
+    }
+
+    &.resources{
+
+    }
+
+}
