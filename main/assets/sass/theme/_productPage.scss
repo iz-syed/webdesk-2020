@@ -14,9 +14,9 @@
     background-color:var(--color-white);
     margin:13px;
 
-    &-image {
+    // &-image {
 
-    }
+    // }
 
     &-title {
         color:var(--color-dark-blue);
@@ -42,4 +42,34 @@
 }
 .color-gray {
     color:#5f5f5f;
+}
+
+.btn-outline-blue {
+    border-color:var(--color-dark-blue);
+    color:var(--color-dark-blue);
+    padding: 5px 15px;
+
+    &:hover {
+        color:var(--color-white);
+        background-color:var(--color-dark-blue);
+    }
+}
+
+.btn-filled-blue {
+    color:var(--color-white);
+    background-color:var(--color-dark-blue);
+    border-color:var(--color-dark-blue);
+    padding: 5px 15px;
+
+    
+    &:hover {
+        color:var(--color-dark-blue);
+        background-color:transparent;
+    }
+}
+
+.mainTitle {
+    color:var(--color-dark-blue);
+    font-size:36px;
+    font-weight: normal;
 }
