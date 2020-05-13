@@ -68,7 +68,7 @@
 </div>
 </nav>
 
-<div class="page-heading category-picked-generic" style="background: #00227f url(../assets/images/heading-banner/category-picked-generic.png) center right no-repeat;">
+<div class="page-heading category-picked-generic" style="background: #00227f url(assets/images/heading-banner/category-picked-generic.png) center right no-repeat;">
     <div class="container">
         <h1>(CATEGORY NAME TITLE)</h1>
         <p>(Categroy description if necessary)</p>
@@ -454,6 +454,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Search overlay content -->
+    <div id="searchOverlay" class="overlay">
+        <div class="search-safe-wrapper d-flex align-items-center">
+            <div class="container">
+                <div class="overlay-content">
+                    <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <span class="closebtn text-dark" onclick="closeSearch()" title="Close Overlay">×</span>
+            </div>
+        </div>
+    </div>
 
 
 
