@@ -1,30 +1,55 @@
 /* Page Heading */
 
-.page-heading{background: #0080cd; color: #fff; min-height: 265px; display: flex; flex-direction: column; justify-content: center;
-    .container{/*max-width: 770px;*/padding-left: 10%; position: relative;}
-    h1{font-size: 31px;font-weight: 400; max-width: 265px; text-transform: uppercase;}
-    p{font-size: 14px; max-width: 265px;}
+.page-heading{
+    background: #0080cd; 
+    color: #fff; 
+    min-height: 265px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
 
-    &.products-listing{
-        //background: #0080cd url(../images/heading-banner/product-page.png) center right no-repeat;
-    }
-    &.category-picked-products{
-
-    }
-    &.category-picked-generic{
         .container{
-            &:after{background:url(../images/heading-banner/pmt-logo-heading.png) bottom right no-repeat; width: 147px; height: 73px; content: '';
-            position: absolute; bottom:-52px; right: 0;
+            /*max-width: 770px;*/
+            padding-left: 10%; 
+            position: relative;
+        }
+        h1{
+            font-size: 31px;
+            font-weight: 400; 
+            max-width: 265px; 
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 14px; 
+            max-width: 265px;
+        }
+
+        // &.products-listing{
+        //     //background: #0080cd url(../images/heading-banner/product-page.png) center right no-repeat;
+        // }
+        // &.category-picked-products{
+
+        // }
+        &.category-picked-generic{
+            .container{
+                &:after{
+                    background:url(../images/heading-banner/pmt-logo-heading.png) bottom right no-repeat; 
+                    width: 147px; 
+                    height: 73px; 
+                    content: '';
+                    position: absolute; 
+                    bottom:-51px; 
+                    right: 0;
+                }
             }
         }
-    }
 
-    &.medical-order{
+    // &.medical-order{
 
-    }
+    // }
 
-    &.resources{
+    // &.resources{
 
-    }
+    // }
 
 }
