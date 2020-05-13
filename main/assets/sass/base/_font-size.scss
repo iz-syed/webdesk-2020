@@ -18,7 +18,7 @@ $sizes: (
 // alpha
 @each $value in $sizes {
   .font-#{nth($value, 1)} {
-    font-size:#{nth($value, 2)};
+    font-size:#{nth($value, 2)} !important;
   }
 }
 
