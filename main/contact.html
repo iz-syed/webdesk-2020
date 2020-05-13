@@ -31,9 +31,9 @@
 
         <div class="logo-nav-search">
             <div class="container">
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between headNav">
                     <div class="logo">
-                        <img src="assets/images/logo-default.svg" width="214" height="43" />
+                        <a href="index.html"><img src="assets/images/logo-default.svg" alt="Pain Management Technologies" width="214" height="43" /></a>
                     </div>
                     <nav id="navigation" role="navigation" class="navigation">
                         <ul>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       </div>
 
         <!-- breadcrumb -->
         <nav aria-label="breadcrumb">
@@ -256,7 +256,8 @@
     </footer>
 
 
-<div id="myOverlay" class="overlay">
+<!-- Search overlay content -->
+<div id="searchOverlay" class="overlay">
     <div class="test search-safe-wrapper d-flex align-items-center">
         <div class="container">
             <div class="overlay-content">
@@ -265,11 +266,9 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
+            <span class="closebtn text-dark" onclick="closeSearch()" title="Close Overlay">×</span>
         </div>
     </div>
-    
-  <span class="closebtn text-dark" onclick="closeSearch()" title="Close Overlay">×</span>
-  
 </div>
 
 

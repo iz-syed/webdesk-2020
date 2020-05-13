@@ -25,9 +25,9 @@
         </div>
     </div>
 
-       <div class="logo-nav-search">
-            <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
+    <div class="logo-nav-search">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between headNav">
                 <div class="logo">
                     <a href="index.html"><img src="assets/images/logo-default.svg" alt="Pain Management Technologies" width="214" height="43" /></a>
                 </div>
@@ -48,11 +48,11 @@
                     </ul>
                 </nav>
                 <div class="search-wrapper">
-                    <i class="far fa-search pointer"></i>
+                    <i class="far fa-search pointer" onclick="openSearch()"></i>
                 </div>
             </div>
         </div>
-       </div>
+   </div>
 
 
 <div class="homemainslider">
@@ -316,6 +316,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Search overlay content -->
+    <div id="searchOverlay" class="overlay">
+        <div class="test search-safe-wrapper d-flex align-items-center">
+            <div class="container">
+                <div class="overlay-content">
+                    <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <span class="closebtn text-dark" onclick="closeSearch()" title="Close Overlay">×</span>
+            </div>
+        </div>
+    </div>
 
 
 

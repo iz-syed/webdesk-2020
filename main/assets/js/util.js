@@ -2,19 +2,19 @@
 
 
 var os = [
-    'iphone',
-    'ipad',
-    'windows',
-    'mac',
-    'linux'];
+  'iphone',
+  'ipad',
+  'windows',
+  'mac',
+  'linux'];
 
 var match = navigator.appVersion.toLowerCase().match(
-    new RegExp(os.join('|'))
+  new RegExp(os.join('|'))
 );
 
 var classes = match[0] + ' ' + $.browser.name + ' Version-' + $.browser.version;
 if (match) {
-    $('body').addClass(classes);
+  $('body').addClass(classes);
 };
 
 
@@ -29,17 +29,17 @@ consoleLog("hello-warn", "warning");
 //$('.single-item').slick();
 
 $(".single-item").slick({
-	dots: true,
-	arrows: true,
-	prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-	nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+  dots: true,
+  arrows: true,
+  prevArrow: "<button type='button' class='slick-prev pull-left'></button>",
+  nextArrow: "<button type='button' class='slick-next pull-right'></button>"
 });
 
 $(".product-detail-slider").slick({
   dots: true,
   arrows: true,
-  prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-  nextArrow:"<button type='button' class='slick-next pull-right'></button>"
+  prevArrow: "<button type='button' class='slick-prev pull-left'></button>",
+  nextArrow: "<button type='button' class='slick-next pull-right'></button>"
 });
 
 
@@ -50,7 +50,7 @@ var acc = document.getElementsByClassName("toggleNav");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -64,9 +64,9 @@ for (i = 0; i < acc.length; i++) {
 // search overlay
 
 function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("searchOverlay").style.display = "block";
 }
 
 function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("searchOverlay").style.display = "none";
 }
