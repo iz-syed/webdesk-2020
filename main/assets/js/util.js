@@ -61,3 +61,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// search overlay
+
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
