@@ -20,3 +20,27 @@
         max-width: 1044px;
     }
 }
+
+
+.container-fluid{width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@media (max-width: 1439px){
+    .col-lg-4 {
+        -ms-flex: 0 0 50.0%;
+    flex: 0 0 50.0%;
+    max-width: 50.0%;
+    }
+}
+
+@media (min-width: 1440px){
+    .col-lg-4 {
+        -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; 
+    }
+}

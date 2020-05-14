@@ -14,7 +14,7 @@
 
 .productWrap {
     background-color:var(--color-white);
-    margin:13px;
+    // margin:13px;
 
     // &-image {
 
@@ -87,4 +87,10 @@ a[href^="mailto:"] {
     color: var(--color-dark-blue);
     font-size:15px;
     text-decoration: underline;
+}
+
+
+
+.product-sidebar {
+    max-width: 250px;
 }
