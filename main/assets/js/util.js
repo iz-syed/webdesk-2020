@@ -42,7 +42,22 @@ $(".product-detail-slider").slick({
   nextArrow: "<button type='button' class='slick-next pull-right'></button>"
 });
 
+// Sticky header and alter logo
+// scrollTop() >= 380 Should be equal the the height of the header
 
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 380) {
+    $('header .logo-nav-search').addClass('fixed-header');
+    $('.logo .main-logo').addClass('hide-title');
+    $('.logo .sub-logo').addClass('visible-title');
+  }
+  else {
+    $('header .logo-nav-search').removeClass('fixed-header');
+    $('.logo-nav-search .main-logo').removeClass('hide-title');
+    $('.logo-nav-search .sub-logo').removeClass('visible-title');
+  }
+});
 
 // left sidebar toggle
 
