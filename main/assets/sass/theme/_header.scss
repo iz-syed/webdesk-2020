@@ -3,23 +3,64 @@
 header {
     background-color:var(--color-white);
 
-    .logo-nav-search {padding: 12px;}
+    .logo-nav-search {
+        padding: 12px;
+        transition: all 0.2s ease-in-out;
+
+        .logo {
+            .main-logo {
+                &.hide-title {
+                    display:none;
+                }
+            }
+            .sub-logo {
+                display:none;
+
+                &.visible-title {
+                    display:block;
+                }
+            }
+        }
+
+        &.fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            z-index:1;
+            background-color:var(--color-white);
+            -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+            -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+            box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        }
+    }
 }
 
 
 .search-wrapper .fa-search {
     font-size: 17px;
     font-weight: bold;
-    &:hover{color: #4ea0c1;}
+    &:hover {
+        color: #4ea0c1;
+    }
 }
 
-#navigation{
-ul{display: flex;
-	li{
-		a{color: black; padding: 10px 15px;font-weight: 700; text-decoration: none; font-size: 13px;
-		&:hover{color: #4ea0c1;}
-		}
-	}
+#navigation {
+    ul {
+        display: flex;
+        li {
+            a {
+                color: black; 
+                padding: 10px 15px;
+                font-weight: 700; 
+                text-decoration: none; 
+                font-size: 13px;
+    
+                &:hover{
+                    color: #4ea0c1;
+                }
+            }
+        }
 
- }
+    }
 }
