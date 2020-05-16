@@ -5,15 +5,19 @@
 .product-container {
     .productFilter {
         color:#6b6b6b;
-
+        &:hover{color: #274e9f;}
+        &.filter_active{
+            svg{transform: rotate(-180deg);}
+        }
         i {
             display:inline-block;
         }
     }
 }
 
-.productWrap {
+.productWrap {transition: all .5s cubic-bezier(.23,1,.32,1);
     background-color:var(--color-white);
+    margin-bottom: 30px;
     // margin:13px;
 
     // &-image {
@@ -27,7 +31,7 @@
 
     &-description {
         color:#3b3b3b;
-        font-size:12px;
+        font-size:14px; font-family: roboto;
     }
 
     a {
