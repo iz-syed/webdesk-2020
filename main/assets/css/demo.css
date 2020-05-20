@@ -1,0 +1,40 @@
+@media(max-width: 899px){
+
+nav:not(.mm-menu) {
+	display: none;
+}
+
+.header-mob,
+
+.header-mob,
+.header-mob.fixed {
+	position: fixed;
+	/*top: 0;*/
+	left: 0;
+}
+
+.header-mob a {
+	display: block;
+	width: 28px;
+	height: 18px;
+	padding: 11px;
+	margin: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header-mob a:before,
+.header-mob a:after {
+	content: '';
+	display: block;
+	background: #fff;
+	height: 2px;
+}
+.header-mob a span {
+	background: #fff;
+	display: block;
+	height: 2px;
+	margin: 6px 0;
+}
+
+}

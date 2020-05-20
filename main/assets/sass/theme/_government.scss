@@ -2,7 +2,12 @@
 
 .government-container {
 
-    .introcontent{display: flex;
+    .introcontent{
+
+        @media(min-width: 810px){
+            display: flex;
+        }
+
         section{
             margin-right: 30px;
         }

@@ -102,6 +102,34 @@ $("#flip").click(function(){
 });
 
 
+//footer link - mobile view
+
+// $(".footboxone h5").click(function(){
+//   $(".footboxone .footer_links_list").slideToggle();
+// });
+
+// $(".footboxtwo h5").click(function(){
+//   $(".footboxtwo .footer_links_list").slideToggle();
+// });
+
+// $(".footboxthree h5").click(function(){
+//   $(".footboxthree .footer_links_list").slideToggle();
+// });
+
+$(".footboxone h5").click(function(){
+  $(".footboxone").toggleClass("collapse");
+});
+
+$(".footboxtwo h5").click(function(){
+  $(".footboxtwo").toggleClass("collapse");
+});
+
+$(".footboxthree h5").click(function(){
+  $(".footboxthree").toggleClass("collapse");
+});
+
+
+
 $('#hello').hide('slide', {direction: 'left'}, 1000);
 
 
@@ -121,7 +149,7 @@ $('#toggle-fading').click(function(){
 
 //Product filter icon(sidebar show hide)
 
-var closeIcon = $('<span class="closeicon"><svg viewBox="0 0 32 32"><polyline points="32,3.3 20.9,14.4 19.3,16 20.9,17.6 32,28.7 28.7,32 17.6,20.9 16,19.3 14.4,20.9 3.3,32.1 0,28.8 11.1,17.6 12.7,16 11.1,14.4 0,3.3 3.3,0 14.4,11.1 16,12.7 17.6,11.1 28.7,0 32,3.3 "></polyline></svg><span/>');
+var closeIcon = $('<div class="mob-sidebar-title"><strong>CATEGORIES</strong><span class="closeicon"><svg viewBox="0 0 32 32"><polyline points="32,3.3 20.9,14.4 19.3,16 20.9,17.6 32,28.7 28.7,32 17.6,20.9 16,19.3 14.4,20.9 3.3,32.1 0,28.8 11.1,17.6 12.7,16 11.1,14.4 0,3.3 3.3,0 14.4,11.1 16,12.7 17.6,11.1 28.7,0 32,3.3 "></polyline></svg><span/></div>');
 $('.product-sidebar .left-sidebar').prepend(closeIcon);
 
 closeIcon.click(function() {
@@ -130,7 +158,7 @@ closeIcon.click(function() {
 
 
 $('.productFilter,.closeicon').click(function(){
-            $('.product-sidebar').fadeToggle('slow');
+            $('.product-sidebar').fadeToggle('');
             //$('.products-listing-grid').fadeIn(3000);
             
         });

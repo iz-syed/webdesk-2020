@@ -1,7 +1,7 @@
 /* topbar */ 
 
 .topbar {
-   
+  
 background: rgb(85,202,182); /* Old browsers */
 background: -moz-linear-gradient(left,  rgba(85,202,182,1) 0%, rgba(74,151,196,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  rgba(85,202,182,1) 0%,rgba(74,151,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -12,8 +12,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55cab6', end
     padding:8px 0 7px 0;
 }
 
+.topinfo{
+    @media(max-width: 379px){
+        
+    }
+}
 
-.printCatalog {color: var(--color-white);
+.printCatalog {color: var(--color-white); white-space: nowrap;
     padding-left:15px;
     &:before {
         content: "";

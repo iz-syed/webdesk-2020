@@ -1,0 +1,23 @@
+/* Resources */ 
+
+.resources-wrapper{
+
+    .grid-item{
+        .title{
+            h3{
+                margin: 0; padding: 5px 8px;
+            }
+        }
+    }
+
+    ul.resource-list{
+        li{
+            &:hover{border-bottom: 1px solid #274e9f;
+                a{color: blue;}
+            }
+            a{
+                display: block;
+            }
+        }
+    }
+}

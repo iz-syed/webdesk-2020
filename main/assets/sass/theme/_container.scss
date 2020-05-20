@@ -19,7 +19,11 @@
     @media (min-width: 1044px) {
         max-width: 1044px;
     }
+    @media(max-width: 990px){
+        padding-left: 15px; padding-right: 15px;
+    }
 }
+
 
 
 .container-fluid{width: 100%;
@@ -27,6 +31,10 @@
     margin-left: auto;
     padding-left: 45px;
     padding-right: 45px;
+
+   @media(max-width: 990px){
+        padding-left: 15px; padding-right: 15px;
+    }
 }
 
 @media (min-width: 992px){

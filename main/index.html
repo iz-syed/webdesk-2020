@@ -8,9 +8,21 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>TENS Units, Electrotherapy, Heating Pads - Paintechnology.com</title>
+
+    
+
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/demo.css" />
+        <link rel="stylesheet" href="assets/css/mmenu.css" />
+
 </head>
 
 <body>
+
+       
+
+
     <!-- Header -->
     <header>
 
@@ -18,7 +30,7 @@
         <div class="topbar">
             <div class="container-fluid">
                 <div class="d-flex">
-                    <div>Live pain free with the full line of PMT products.</div>
+                    <div class="topinfo">Live pain free with the full line of PMT products.</div>
                     <div class="ml-auto">
                         <a href="javascript:void(0);" class="printCatalog text-uppercase position-relative">Print
                             Catalog</a>
@@ -30,6 +42,74 @@
         <div class="logo-nav-search">
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between headNav">
+
+<!--Mobile Header-->
+<div class="header-mob mobileheader" style="display: flex;">
+    <a href="#menu"><span></span></a> 
+        <nav id="navigation" role="navigation" class="navigation">
+            <ul>
+                <li>
+                    <a href="product.html">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="order-detail.html">ORDER DETAILS</a>
+                </li>
+                <li>
+                    <a href="resources.html">RESOURCES</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+</div>
+
+<!--Desktop Header-->
+<nav id="menu">
+    <div id="panel-menu">
+        <ul>
+            <li><a href="#/">Home</a></li>
+            <li>
+                <span>About us</span>
+                <ul>
+                    <li><a href="#/">History</a></li>
+                    <li>
+                        <span>The team</span>
+                        <ul>
+                            <li><a href="#/">Management</a></li>
+                            <li><a href="#/">Sales</a></li>
+                            <li><a href="#/">Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/">Our address</a></li>
+                </ul>
+            </li>
+            <li><a href="#/">Contact</a></li>
+
+            <li class="Divider">Other demos</li>
+            <li><a href="#">Default demo</a></li>
+            <li><a href="#">One page demo</a></li>
+        </ul>
+    </div>
+
+    <div id="panel-account">
+        <ul>
+            <li><a href="#/">My profile</a></li>
+            <li><a href="#/">Privacy settings</a></li>
+            <li><a href="#/">Activity</a></li>
+            <li><a href="#/">Sign out</a></li>
+        </ul>
+    </div>
+
+    <div id="panel-cart">
+        <p style="text-align: center; padding-top: 30px;">
+            Your shoppingcart is empty.<br />
+            <a href="#/">Continue shopping.</a>
+        </p>
+    </div>
+</nav>
+
+
                     <div class="logo">
                         <a href="index.html" class="main-logo">
                             <img src="assets/images/logo-default.svg" alt="Pain Management Technologies" width="214"
@@ -299,14 +379,14 @@
     <footer class="footer">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-sm-12 col-md-4 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-2 footboxone foottab collapse">
                     <h5 class="footer_header text-uppercase">About</h5>
                     <ul class="footer_links_list">
                         <li><a href="javascript:void(0);">PMT Infomation</a></li>
                         <li><a href="javascript:void(0);">Company News</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-2 footboxtwo foottab collapse">
                     <h5 class="footer_header text-uppercase">Resources</h5>
                     <ul class="footer_links_list">
                         <li><a href="javascript:void(0);">User Manuals</a></li>
@@ -318,7 +398,7 @@
                         <li><a href="javascript:void(0);">Warranty Info</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-2">
+                <div class="col-sm-12 col-md-4 col-lg-2 footboxthree foottab collapse">
                     <h5 class="footer_header text-uppercase">Order Details</h5>
                     <ul class="footer_links_list">
                         <li><a href="javascript:void(0);">Ordering options </a></li>
@@ -386,12 +466,85 @@
 
 
 
-
-
-
-
-
     <script src="assets/js/scripts.js"></script>
+
+
+ <!-- mmenu scripts -->
+        <script src="assets/js/mmenu.js"></script>
+        <script>
+            new Mmenu(
+                document.querySelector('#menu'),
+                {
+                    extensions: ['', 'shadow-page'],
+                    setSelected: true,
+                    counters: true,
+                    searchfield: {
+                        placeholder: 'Search menu items',
+                    },
+                    // iconbar: {
+                    //     use: '(min-width: 450px)',
+                    //     top: [
+                    //         '<a href="#/"><span class="fa fa-home"></span></a>',
+                    //     ],
+                    //     bottom: [
+                    //         '<a href="#/"><span class="fa fa-twitter"></span></a>',
+                    //         '<a href="#/"><span class="fa fa-facebook"></span></a>',
+                    //         '<a href="#/"><span class="fa fa-youtube"></span></a>',
+                    //     ],
+                    // },
+                    // sidebar: {
+                    //     collapsed: {
+                    //         use: '(min-width: 450px)',
+                    //         hideNavbar: false,
+                    //     },
+                    //     expanded: {
+                    //         use: '(min-width: 992px)',
+                    //     },
+                    // },
+                    navbars: [
+                        // {
+                        //     content: ['searchfield'],
+                        // },
+                        {
+                            type: 'tabs',
+                            content: [
+                                '<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>',
+                                '<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>',
+                                '<a href="#panel-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>',
+                            ],
+                        },
+                        {
+                            content: ['prev', 'breadcrumbs', 'close'],
+                        },
+                        {
+                            position: 'bottom',
+                            content: [
+                                '<a href="#>Call to Acttion</a>',
+                            ],
+                        },
+                    ],
+                },
+                {
+                    searchfield: {
+                        clear: true,
+                    },
+                    navbars: {
+                        breadcrumbs: {
+                            removeFirst: true,
+                        },
+                    },
+                }
+            );
+
+            document.addEventListener('click', function (evnt) {
+                var anchor = evnt.target.closest('a[href^="#/"]');
+                if (anchor) {
+                    alert("Thank you for clicking, but that's a demo link.");
+                    evnt.preventDefault();
+                }
+            });
+        </script>
+
 </body>
 
 </html>

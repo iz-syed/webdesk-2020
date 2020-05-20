@@ -1,6 +1,12 @@
+/*Left sidebar css*/
+/*mobile menu*/
+
+
+
+
    .product-sidebar{
 
-      .closeicon{display: none;}
+      .mob-sidebar-title{display: none;}
 
     .left-sidebar {
         padding:5px;
@@ -67,7 +73,7 @@
 
 
 
-@media (max-width: 959px) { padding:20px;
+@media (max-width: 959px) { padding:20px;padding-top: 34px;
     background: #fff;
     height: 100%;
     line-height: 1;
@@ -80,15 +86,16 @@
     z-index: 6;
     -ms-overflow-style: none;
 
-    &:before{
-      content: 'CATEGORIES';
-    font-size: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    display: block;
-    color: gray;
-    }
+    .mob-sidebar-title {
+    position: fixed;
+    background: #f1f1f1;
+    top: 0;
+    padding: 9px 20px;
+    z-index: 1;
+    width: 75vw;
+    margin-left: -20px;
+-ms-overflow-style: none;border-bottom: 1px solid #ddd;
+  }
 
 
     .toggleNav{
@@ -104,7 +111,7 @@
 
 
 @media (max-width: 959px) {
-        display: none;
+        display: none; z-index: 99;
        
     &:after {
     background: #121212;
@@ -119,9 +126,8 @@
     content: '';
     }
 
-
- .closeicon{display: block;
-    position: absolute;
+.mob-sidebar-title{display: block;}
+ .closeicon{    position: absolute;
     top: 11px;
     right: 20px;width: 12px;
     cursor: pointer;
