@@ -87,35 +87,7 @@ function closeSearch() {
 }
 
 
-
-//slideDown, slideUp, slideToggle
-$("#flip").click(function(){
-  $("#panel").slideDown();
-});
-
-$("#flip").click(function(){
-  $("#panel").slideUp();
-});
-
-$("#flip").click(function(){
-  $("#panel").slideToggle();
-});
-
-
-//footer link - mobile view
-
-// $(".footboxone h5").click(function(){
-//   $(".footboxone .footer_links_list").slideToggle();
-// });
-
-// $(".footboxtwo h5").click(function(){
-//   $(".footboxtwo .footer_links_list").slideToggle();
-// });
-
-// $(".footboxthree h5").click(function(){
-//   $(".footboxthree .footer_links_list").slideToggle();
-// });
-
+//  footer section
 $(".footboxone h5").click(function(){
   $(".footboxone").toggleClass("collapse");
 });
@@ -132,21 +104,6 @@ $(".footboxthree h5").click(function(){
 
 $('#hello').hide('slide', {direction: 'left'}, 1000);
 
-
-//Fade-in-out
-$('#slide-in').click(function(){
-            $('img').fadeIn('fast');
-        });
-        
-$('#fade-out').click(function(){
-            $('img').fadeOut(400);
-        });
-        
-$('#toggle-fading').click(function(){
-            $('img').fadeToggle('slow');
-        });
-
-
 //Product filter icon(sidebar show hide)
 
 var closeIcon = $('<div class="mob-sidebar-title"><strong>CATEGORIES</strong><span class="closeicon"><svg viewBox="0 0 32 32"><polyline points="32,3.3 20.9,14.4 19.3,16 20.9,17.6 32,28.7 28.7,32 17.6,20.9 16,19.3 14.4,20.9 3.3,32.1 0,28.8 11.1,17.6 12.7,16 11.1,14.4 0,3.3 3.3,0 14.4,11.1 16,12.7 17.6,11.1 28.7,0 32,3.3 "></polyline></svg><span/></div>');
@@ -158,20 +115,12 @@ closeIcon.click(function() {
 
 
 $('.productFilter,.closeicon').click(function(){
-            $('.product-sidebar').fadeToggle('');
-            //$('.products-listing-grid').fadeIn(3000);
-            
-        });
+    $('.product-sidebar').fadeToggle('');
+    //$('.products-listing-grid').fadeIn(3000);
+});
 
-
-
-
-//Toggle class
-$("parenttag").click(function(){
-        $(this).toggleClass("highlight");
-    });
 
 //Product filter icon active
 $(".productFilter").click(function(){
-        $(this).toggleClass("filter_active");
-    });
+  $(this).toggleClass("filter_active");
+});
