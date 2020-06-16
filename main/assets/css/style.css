@@ -15915,16 +15915,6 @@ header {
         line-height: normal;
         font-weight: 300;
         font-family: "Roboto Condensed", sans-serif; }
-      .homemainslider .slidebg .slide-caption .call-action {
-        font-size: 12px;
-        color: white;
-        background: #000;
-        text-decoration: none;
-        padding: 8px 15px;
-        width: 108px;
-        text-align: center; }
-        .homemainslider .slidebg .slide-caption .call-action:hover {
-          background: #383838; }
       @media (max-width: 767px) {
         .homemainslider .slidebg .slide-caption {
           left: 1em; } }
@@ -16049,6 +16039,17 @@ header {
 .mag-noflow.mag-zoomed-container.mag-zoomed-bg {
   position: relative; }
 
+.call-action {
+  font-size: 12px;
+  color: white;
+  background: #000;
+  text-decoration: none;
+  padding: 8px 15px;
+  width: 108px;
+  text-align: center; }
+  .call-action:hover {
+    background: #383838; }
+
 /* _bigProductButtons */
 .bigProductButtons {
   background-color: var(--color-white);
@@ -16061,7 +16062,9 @@ header {
     margin: 10px 0; }
   .bigProductButtons p {
     font-size: 14px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif; }
   .bigProductButtons .container {
     padding-left: 30px;
     padding-right: 30px; }
