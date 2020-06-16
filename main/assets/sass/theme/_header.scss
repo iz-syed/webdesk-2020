@@ -54,9 +54,11 @@ header {
             a {
                 color: black; 
                 padding: 10px 15px;
-                font-weight: 700; 
+                font-weight: 500; 
                 text-decoration: none; 
                 font-size: 13px;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 1.15px;
     
                 &:hover{
                     color: #4ea0c1;
