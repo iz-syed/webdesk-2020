@@ -28,7 +28,8 @@
     padding-top: 60px;
 }
 
-.productWrap {transition: all .5s cubic-bezier(.23,1,.32,1);
+.productWrap {
+    transition: all .5s cubic-bezier(.23,1,.32,1);
     background-color:var(--color-white);
     margin-bottom: 30px;
     &:hover{
@@ -67,6 +68,7 @@
     a {
         display:block;
         text-decoration:none;
+        text-transform: capitalize;
         &:hover{
             &:hover{
             text-decoration: none;
