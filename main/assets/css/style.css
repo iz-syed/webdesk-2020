@@ -15602,7 +15602,10 @@ h1.heading-center {
   position: relative; }
   h1.heading-center small {
     font-size: 14px;
-    display: block; }
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.2px; }
   h1.heading-center.white {
     color: white; }
   h1.heading-center:after {
@@ -16206,16 +16209,16 @@ ul.products {
       .page-heading .container-fluid {
         padding-left: 20px; } }
   .page-heading h1 {
-    font-size: 31px;
+    font-size: 36px;
     font-weight: 400;
-    max-width: 265px;
+    max-width: 300px;
     text-transform: uppercase; }
     @media (max-width: 768px) {
       .page-heading h1 {
         max-width: 98%; } }
   .page-heading p {
     font-size: 14px;
-    max-width: 265px; }
+    max-width: 300px; }
     @media (max-width: 768px) {
       .page-heading p {
         max-width: 98%; } }
@@ -16289,7 +16292,8 @@ ul.products {
       text-decoration: none; }
   .productWrap a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: capitalize; }
     .productWrap a:hover:hover {
       text-decoration: none; }
 
