@@ -27,6 +27,9 @@ h1.heading-center{
     small{
         font-size: 14px; 
         display: block;
+        font-family: $roboto;
+        font-weight: $regular;
+        letter-spacing: 1.2px;
     }
 
     &.white{
