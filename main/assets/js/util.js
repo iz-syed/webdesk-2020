@@ -124,3 +124,29 @@ $('.productFilter,.closeicon').click(function(){
 $(".productFilter").click(function(){
   $(this).toggleClass("filter_active");
 });
+
+
+
+//Resources page accordion
+$(".expand").click(function() {
+    target_num = $(this).attr("id").split("-")[1];
+    content_id = "#expandable-".concat(target_num);
+    $(content_id).slideToggle("slow")
+});
+
+
+
+var btn = $('#back_top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});

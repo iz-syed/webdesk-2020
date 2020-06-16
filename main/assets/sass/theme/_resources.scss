@@ -2,6 +2,17 @@
 
 .resources-wrapper{
 
+    .grid{
+
+        @media(max-width: 1043px){
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        }
+
+        @media(max-width: 398px){
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+    }
+
     .grid-item{
         .title{
             h3{
@@ -21,3 +32,110 @@
         }
     }
 }
+
+.expandable {display: none;}
+
+.resources_about{margin-bottom: 30px;
+
+    .resource-list{
+        li{
+            &:hover{border-bottom: 1px solid #274e9f;
+                a{color: blue;background-color: rgba(0, 105, 115, 0.1);}
+            }
+
+            a{display: block;text-transform: capitalize;}
+        }
+    }
+
+}
+
+
+
+
+.expandable { display:none;margin-top:10px;}
+.expandable p strong { padding-right:3px; }
+
+.acctab-cont {
+    padding: 15px;
+    background: #e9e9e9;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+.acctab > ul {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.acctab .expandable{padding: 10px;margin-top: 0;padding-top: 0;}
+.acctab > ul > li > a{background: #C1D6D7; color:#000; font-weight: bold;padding: 0 10px; margin: 5px 10px;
+border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;
+overflow: hidden;}
+.acctab-cont{padding: 15px;}
+
+.expand-bullet {
+    display: inline-block;
+    width: 100%; 
+
+   .bullets {
+        float: left;
+        width: 33.33%;
+        margin-bottom: 20px;
+
+           ul  {
+            margin:10px 0 0 5px;
+        } // ul
+    } // bullets
+} // expand-bullet
+ 
+
+ @media (min-width: 768px) and (max-width: 1008px) {
+  .expand-bullet .bullets {
+    width: 50%;
+  }
+  .expand-bullet .bullets:nth-child(2n+3) {
+    clear: both;
+  }
+  .expand-bullet .bullets:nth-child(3n+4) {
+    clear: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .expand-bullet .bullets {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: inherit;
+  }
+}
+
+
+.bullets:nth-child(3n+4) {
+    clear: both;
+}
+
+#expandable-8 tbody{border: 1px solid #fff !important;}
+#expandable-8 td {padding: 5px; font-size: 12px;}
+#expandable-8 tbody td { border-bottom: 1px solid #fff !important;}
+#expandable-8 thead td {background: white;font-weight: bold !important;font-size: 12px; white-space: nowrap;}
+.rowspan {border: 1px solid #fff !important;text-align: center;}
+.scroll-mobile {max-width: 100vw; overflow: auto;padding-left: 1px;}
+
+
+.acctab ul.resource-list li{border-bottom: 0;
+    &:hover{border-bottom: 0;}
+}
+
+.title.indibox {
+    background-color: #044d9f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    h3{margin:5px 0;}
+}
+
+
+a#users-manuals, a#translated-manuals, a#forms, a#videos, a#sales-literature,a#about-therapy,a#warranty-info {
+    position: relative;
+    top: -100px;
+    pointer-events: none;
+}
+

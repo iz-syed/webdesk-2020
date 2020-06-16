@@ -1,0 +1,98 @@
+/* AboutOhio */
+.stateofohio {
+    text-align: center;
+    margin: 30px 0 30px;
+}
+
+
+.blubox {
+    background: #edf6f8;
+    border: 1px solid #0096a9;
+    padding: 50px;
+    max-width: 815px;
+    margin: auto;
+    h2 {
+  font-size: 18px !important;
+  color: #0096a9;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+	}
+	 p {
+  color: #393a3a;
+  font-size: 18px;
+  margin-bottom: 15px !important;
+	}
+}
+
+
+.stateofohio{background-image:none!important; max-width: 815px; margin: auto;}
+.stateofohio p{font-size: 18px;}
+.howitworks{background: url(https://pmt-new.s3.amazonaws.com/img/contact-bg_new.png) no-repeat center right; min-height: 610px;
+	h2{font-size: 22px; font-weight: bold;}
+	img {display: inline-block;}
+}
+.txt18{font-size: 18px;}
+
+
+@media (max-width: 565px) {
+    .cert_sec {
+    width: 100%;
+  }
+    .cert_sec img {
+    margin: auto;
+  }
+}
+
+
+.f-block {
+  float: right;
+  margin: -80px  0 25px 0;
+}
+@media (max-width: 767px) {
+  .f-block {
+    float: left;
+    margin: 10px 25px;
+  }
+}
+
+
+
+ul.govtList {
+		// list-style: inherit;
+		li {
+			// list-style-type:decimal-leading-zero;
+			padding-left: 15px;
+			line-height: 28px;
+
+			span {
+				position: relative;
+
+				&:before {
+					content:"";
+					
+					background: url(http://paintechnology.s3.amazonaws.com/pmt/images/arrow.png) no-repeat center;
+					position: absolute;
+					width: 15px;
+					height: 15px;
+					left: -20px;
+					top:1px;
+				} // span:before
+			} // span
+
+			&.title {
+				color:#006973;
+				list-style-type:none;
+				padding: 10px;
+				padding-left: 0;
+				padding-bottom: 0;
+				font-weight: bold;     font-size: 20px;
+   				 margin-bottom: 10px;
+    			margin-top: 10px;
+			} // title
+		} // li
+
+		&.child {
+			padding-left: 15px;
+		} // li:last-child
+
+	} // govtList Globall

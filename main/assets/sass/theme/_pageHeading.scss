@@ -12,28 +12,38 @@
             /*max-width: 770px;*/
             padding-left: 10%; 
             position: relative;
+            @media(max-width: 768px){
+                padding-left:20px;
+            }
         }
         h1{
             font-size: 31px;
             font-weight: 400; 
             max-width: 265px; 
             text-transform: uppercase;
+            @media(max-width: 768px){
+                 max-width:98%;
+            }
         }
         p{
             font-size: 14px; 
             max-width: 265px;
+            @media(max-width: 768px){
+                 max-width:98%;
+            }
         }
 
         // &.products-listing{
-        //     //background: #0080cd url(../images/heading-banner/product-page.png) center right no-repeat;
+        //     //background: #0080cd url(https://pmt-new.s3.amazonaws.com/img/heading-banner/product-page.png) center right no-repeat;
         // }
         // &.category-picked-products{
 
         // }
         &.category-picked-generic{
+             h1{max-width: 100%;}
             .container{
                 &:after{
-                    background:url(../images/heading-banner/pmt-logo-heading.png) bottom right no-repeat; 
+                    background:url(https://pmt-new.s3.amazonaws.com/img/heading-banner/pmt-logo-heading.png) bottom right no-repeat; 
                     width: 147px; 
                     height: 73px; 
                     content: '';
@@ -52,4 +62,20 @@
 
     // }
 
+    @media(max-width: 768px){
+        min-height: 165px;
+    }
+
+}
+
+
+.ohio-bwc-program{
+    &.page-heading{
+        h1{max-width: 70%; 
+
+            @media(max-width: 768px){
+                max-width: 100%;
+            }
+        }
+    }
 }

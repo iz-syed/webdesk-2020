@@ -1,0 +1,74 @@
+/* ohio-bwc-program */ 
+
+.bwc-program-form{ margin: auto;margin-top: 30px;
+    h1{max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    color: #006973;
+    margin-bottom: 25px;
+    text-align: center;}
+}
+
+div#bwcform{margin: auto; max-width: 500px;font-size: 16px;
+    label{min-width: 130px; margin-right: 15px;}
+    .submit {
+    width: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #1a9bac;
+    border: 1px solid #066774;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    }
+    .submit:hover {
+    background: #0b7b8a;
+    }
+    .form-group {margin-bottom: 15px; display: flex;
+        input, select, textarea{
+            background: #adefff;
+            border: 1px solid #61a0af;
+        }
+
+        textarea{height: 100px;}
+    }
+    .help-block{color: red;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;}
+    .submit-btn {padding-right: 78px;
+        text-align: center;
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+  color: #000;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+}
+
+::placeholder {
+  color: #000;
+}
+.form-group > div {
+    width: 100%;}
+}
+.linktxt{text-decoration: underline; color: #132581;}
+
+@media(max-width: 600px){
+    div#bwcform .form-group {
+    display: block;
+    text-align: left;
+    margin-right: 15px;
+    margin-left: 15px;}
+    
+    div#bwcform .submit-btn {
+    padding-right: 0;
+    text-align: left;
+    padding-left: 32px;
+    }
+}

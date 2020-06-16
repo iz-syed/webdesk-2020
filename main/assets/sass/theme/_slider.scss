@@ -17,7 +17,7 @@
             min-height: 414px;
             padding-top: 32%; background-size: cover!important;
         }
-        .slide-caption {
+        .slide-caption {cursor: grab;
             text-transform: uppercase;
             color: white;
             position: absolute;
@@ -57,29 +57,33 @@
                     background: #383838
                 }
             }
+
+            @media(max-width: 767px){
+                left: 1em;
+            }
         }
     }
     .slide-item1 {
         .slide-img {
-            background: url(../images/homeSlide/slide1.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide1.png) center right no-repeat;
         }
         .slide-caption {}
     }
     .slide-item2 {
         .slide-img {
-            background: url(../images/homeSlide/slide2.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide2.png) center right no-repeat;
         }
         .slide-caption {}
     }
     .slide-item3 {
         .slide-img {
-            background: url(../images/homeSlide/slide3.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide3.png) center right no-repeat;
         }
         .slide-caption {}
     }
     .slide-item4 {
         .slide-img {
-            background: url(../images/homeSlide/slide4.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide4.png) center right no-repeat;
         }
         .slide-caption {}
         .slidebg {
@@ -88,7 +92,7 @@
     }
     .slide-item5 {
         .slide-img {
-            background: url(../images/homeSlide/slide5.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide5.png) center right no-repeat;
         }
         .slide-caption {}
         .slidebg {
@@ -97,7 +101,7 @@
     }
     .slide-item6 {
         .slide-img {
-            background: url(../images/homeSlide/slide6.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide6.png) center right no-repeat;
         }
         .slide-caption {}
         .slidebg {
@@ -106,7 +110,7 @@
     }
     .slide-item7 {
         .slide-img {
-            background: url(../images/homeSlide/slide7.png) center right no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/homeSlide/slide7.png) center right no-repeat;
         }
         .slide-caption {}
         .slidebg {
@@ -124,7 +128,7 @@
         .slick-prev {
             width: 40px;
             height: 40px;
-            background: url(../images/arrow-left-wh.png) center center no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/arrow-left-wh.png) center center no-repeat;
             opacity: .6;
             &:before {
                 display: none;
@@ -136,7 +140,7 @@
         .slick-next {
             width: 40px;
             height: 40px;
-            background: url(../images/arrow-right-wh.png) center center no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/arrow-right-wh.png) center center no-repeat;
             opacity: .6;
             &:before {
                 display: none;
@@ -174,7 +178,7 @@
 
 /*Product detail page slider*/
 
-.product-slider {
+.product-slider {padding-top:30px;
     background: #fff;
     .product-detail-slider {
         .slick-prev {
@@ -187,31 +191,31 @@
         .slick-prev {
             width: 40px;
             height: 40px;
-            background: url(../images/arrow-left.png) center center no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/arrow-left.png) center center no-repeat;
             opacity: .6;
             &:before {
                 display: none;
             }
             &:hover {
                 opacity: 1;
-                background: url(../images/arrow-left-over.png) center center no-repeat;
+                background: url(https://pmt-new.s3.amazonaws.com/img/arrow-left-over.png) center center no-repeat;
             }
         }
         .slick-next {
             width: 40px;
             height: 40px;
-            background: url(../images/arrow-right.png) center center no-repeat;
+            background: url(https://pmt-new.s3.amazonaws.com/img/arrow-right.png) center center no-repeat;
             opacity: .6;
             &:before {
                 display: none;
             }
             &:hover {
                 opacity: 1;
-                background: url(../images/arrow-right-over.png) center center no-repeat;
+                background: url(https://pmt-new.s3.amazonaws.com/img/arrow-right-over.png) center center no-repeat;
             }
         }
         .slick-dots {
-            bottom: -40px;
+            bottom: -60px;
         }
         .slick-dots li {
             width: 10px;
@@ -237,4 +241,13 @@
             }
         }
     }
+}
+
+.mag-thumb{
+    img{max-height: 430px;
+    margin: auto;}
+}
+
+.mag-noflow.mag-zoomed-container.mag-zoomed-bg {
+    position: relative;
 }

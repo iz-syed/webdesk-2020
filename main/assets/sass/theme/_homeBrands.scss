@@ -12,7 +12,15 @@ ul.pmt-brands-logo{
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
     li{margin: 20px;
     	&:hover img{-webkit-filter: drop-shadow(0px 2px 0px #37a4ae);filter: drop-shadow(0px 2px 0px #37a4ae);}
+
+    	@media(max-width: 768px){
+    		margin: 5px;
+    	}
     }
+}
+
+@media(max-width: 768px){
+	padding: 20px 10px 30px 10px;
 }
 
 }

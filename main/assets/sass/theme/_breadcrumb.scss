@@ -2,6 +2,9 @@
 [aria-label="breadcrumb"] {
     background-color: #eef4f5;
 }
+
+ 
+
 .breadcrumb {font-size: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +13,25 @@
     list-style: none;
     background-color: #eef4f5;
     // border-radius: .25rem; 
+
+      & > span{font-size: 0;
+        &:after{display: inline-block;font-size: 10px;
+                padding-right: 0.5rem;
+                color: #4e4e4e;
+                content: '/';
+                padding: 0 10px;
+              }
+          }
+
   }
+
+  a {
+          color:#4e4e4e;
+          text-decoration:none;
+          &:hover{text-decoration: underline;} text-transform: uppercase;
+      }
+
+
   
   .breadcrumb-item {
       text-transform:uppercase;

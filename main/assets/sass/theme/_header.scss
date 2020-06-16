@@ -48,7 +48,9 @@ header {
 #navigation {
     ul {
         display: flex;
-        li {
+        li { &.active{
+            a{ color: #4ea0c1;}
+        }
             a {
                 color: black; 
                 padding: 10px 15px;
