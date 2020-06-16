@@ -32,18 +32,18 @@
             text-align: left;
             h3 {
                 font-size: 16px;
-                letter-spacing: 1.5px;
-                font-weight: 300;
-                font-family: $title-text-alt;
-                text-shadow: 2px 2px 1px #89a4ab;
+                letter-spacing: 1.2px;
+                font-weight: 400;
+                font-family: $roboto;
+                // text-shadow: 2px 2px 1px #89a4ab;
             }
             h2 {
-                font-size: 32px;
+                font-size: (32px + 4);
                 margin: 0 0 15px;
                 line-height: normal;
                 font-weight: 300;
                 font-family: $title-text-alt;
-                text-shadow: 2px 2px 1px #89a4ab;
+                // text-shadow: 2px 2px 1px #89a4ab;
             }
             .call-action {
                 font-size: 12px;
