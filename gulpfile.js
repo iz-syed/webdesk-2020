@@ -6,6 +6,7 @@ var autoprefixer = require('autoprefixer');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
 
 // js file paths
 var utilJsPath = 'main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
@@ -23,8 +24,14 @@ function reload(done) {
 
 gulp.task('sass', function () {
     return gulp.src(scssFilesPath)
+        .pipe(sourcemaps.identityMap())
         .pipe(sassGlob())
-        .pipe(sass({ outputStyle: 'nested' }).on('error', sass.logError))
+        .pipe(sass({
+            sourceComments: 'map',
+            sourceMap: 'sass',
+            outputStyle: 'nested'
+        }).on('error', sass.logError))
+        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest(cssFolder))
         .pipe(browserSync.reload({
             stream: true
