@@ -31,7 +31,7 @@ gulp.task('sass', function () {
             sourceMap: 'sass',
             outputStyle: 'nested'
         }).on('error', sass.logError))
-        .pipe(sourcemaps.write('../maps'))
+        .pipe(sourcemaps.write(''))
         .pipe(gulp.dest(cssFolder))
         .pipe(browserSync.reload({
             stream: true
